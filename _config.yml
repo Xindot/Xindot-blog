@@ -2,10 +2,10 @@
 permalink:        pretty
 
 # Setup
-url:              http://qwtel.com
+url:              blog.nuoluan.com
 
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
-baseurl:          
+baseurl:          blog.nuoluan.com
 
 title:            nuoluan_blog
 
