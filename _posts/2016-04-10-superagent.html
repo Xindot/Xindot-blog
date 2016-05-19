@@ -53,8 +53,8 @@ req.on('error', function (err) {
 req.write(postData);
 req.end();
 
-从上面的代码中，我们可以看出，使用superagent发送一个post请求，并设置了相关请求头信息（可以链式操作），相比较使用内置的模块，要简单很多。
-基本用法在 var request = require('superagent') 之后， request 对象上将会有许多方法可供使用。我们可以使用 get 、 post 等方法名来声明一个get或者post请求，然后再通过 end() 方法来发出请求。下面是个例子。
+### 从上面的代码中，我们可以看出，使用superagent发送一个post请求，并设置了相关请求头信息（可以链式操作），相比较使用内置的模块，要简单很多。
+### 基本用法在 var request = require('superagent') 之后， request 对象上将会有许多方法可供使用。我们可以使用 get 、 post 等方法名来声明一个get或者post请求，然后再通过 end() 方法来发出请求。下面是个例子。
 
 request
     .get('/search')
@@ -62,7 +62,7 @@ request
 
     })
 
-这里有一点需要注意，就是只要当调用了 end() 方法之后，这个请求才会发出。在调用 end() 之前的所有动作其实都是对请求的配置。
+### 这里有一点需要注意，就是只要当调用了 end() 方法之后，这个请求才会发出。在调用 end() 之前的所有动作其实都是对请求的配置。
 我们在具体使用时，还可以将请求方法作为字符串参数，比如
 request('GET', '/search').end(function (err, res) {});在nodejs客户端中，还可以提供绝对路径，
 request.get('http://www.baidu.com/search').end(function (err, res) {});其余的http谓语动词也是可以使用，比如 DELETE 、 HEAD 、 POST 、 PUT 等等。使用的时候，我们只需要变更 request[METHOD] 中的 METHOD 即可。 request.head('/favicon.ico').end(function (err, res) {});不过，针对 DELETE 方法，有一点不同，因为 delete 是一个保留关键字，所以我在使用的时候应该是使用 del() 而不是 delete() 。
