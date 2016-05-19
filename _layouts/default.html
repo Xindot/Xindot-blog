@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-　　　　<title>{{ page.title }}</title>
-　　</head>
-<body>
-　　{{ content }}
-</body>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <a id="_menu" class="menu" href="#_sidebar">☰</a>
+
+    <main class="content container">
+      {{ content }}
+    </main>
+
+    {% include sidebar.html %}
+
+    <script src="{{ site.baseurl }}/public/js/hydejack.js" async></script>
+  </body>
 </html>
