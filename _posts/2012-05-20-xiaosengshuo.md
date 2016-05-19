@@ -1,5 +1,5 @@
 ---
 layout: post
-title: 心窝说
+title: 小僧说
 tags: [hyde]
 ---

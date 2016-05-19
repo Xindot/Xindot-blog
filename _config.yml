@@ -7,13 +7,14 @@ url:              ''
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            nuoluan_blog
+title:            CENG SENG
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  A pretentious two-column [Jekyll](http://jekyllrb.com/) theme, stolen by [`@qwtel`](https://twitter.com/qwtel)
-  from [Hyde](http://hyde.getpoole.com).
-  You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
+  曾经小僧 >
+  web前端一枚...
+  [cengseng.com](http://cengseng.com)
+  山有木兮木有枝.
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [jekyll, hyde]
