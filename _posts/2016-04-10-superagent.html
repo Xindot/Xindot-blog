@@ -19,18 +19,18 @@ title: 通读superagent文档[整理]
 <p>var queryString = require('queryString');</p>
 
 // 使用superagent
-request
-    .post('/api/pet')
-    .send({ name: 'Manny', species: 'cat' })
-    .set('X-API-Key', 'foobar')
-    .set('Accept', 'application/json')
-    .end(function(err, res){
-           if (res.ok) {
-              alert('yay got ' + JSON.stringify(res.body));
-           } else {
-              alert('Oh no! error ' + res.text);
-           }
-    });
+        request
+        .post('/api/pet')
+        .send({ name: 'Manny', species: 'cat' })
+        .set('X-API-Key', 'foobar')
+        .set('Accept', 'application/json')
+        .end(function(err, res){
+               if (res.ok) {
+                  alert('yay got ' + JSON.stringify(res.body));
+               } else {
+                  alert('Oh no! error ' + res.text);
+               }
+        });
 
 // 使用http
 var postData = queryString.stringify({name: 'Manny', species: 'cat'});
