@@ -1,0 +1,8 @@
+.DS_Store
+.project
+
+public/avatar/*
+*.log
+
+nohup.out
+npm-debug.log
