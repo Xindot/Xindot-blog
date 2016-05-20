@@ -17,7 +17,7 @@ description:      >
   山有木兮木有枝.
 
 # The tags listed as entries in the sidebar
-sidebar_tags:     [jekyll, hyde]
+sidebar_tags:     [jekyll, hyde, nodejs]
 
 # Fallback image and color if not overwritten for tag or post
 image:            /public/img/nap.jpg
