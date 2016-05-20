@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [整理稿]通读superagent文档
+title: 通读superagent文档【整理稿】
 tags: [NodeJs]
 ---
 
