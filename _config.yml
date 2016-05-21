@@ -7,7 +7,7 @@ url:              ''
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            CENG SENG
+title:            nuoluan_blog
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
@@ -17,7 +17,7 @@ description:      >
   山有木兮木有枝.
 
 # The tags listed as entries in the sidebar
-sidebar_tags:     [jekyll, hyde, nodejs]
+sidebar_tags:     [jekyll,hyde,nodejs,git]
 
 # Fallback image and color if not overwritten for tag or post
 image:            /public/img/nap.jpg

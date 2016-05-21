@@ -13,7 +13,7 @@
 
 hyde:
   name: Hyde
-  image: public/img/hyde.jpg
+  image: /public/img/hyde.jpg
   color: '#949667'
   description: >
     Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
@@ -21,16 +21,23 @@ hyde:
 
 jekyll:
   name: Jekyll
-  image: public/img/jekyll.jpg
+  image: /public/img/jekyll.jpg
   color: '#949667'
   description: >
     Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
 
 nodejs:
   name: NodeJs
-  image: public/img/jekyll.jpg
+  image: /public/img/nodejs.jpg
   color: '#009999'
   description: > 
     Node.js是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。
 
+
+git:
+  name: Git
+  image: /public/img/git.jpg
+  color: '#006666'
+  description: > 
+    Node.js是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。
 
