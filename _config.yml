@@ -13,7 +13,7 @@ title:            nuoluan_blog
 description:      >
   曾经小僧 >
   web前端一枚...
-  [cengseng.com](http://cengseng.com)
+  [cengseng.com]()
   山有木兮木有枝.
 
 # The tags listed as entries in the sidebar
@@ -28,7 +28,8 @@ author:
 
   # Setting social media usernames will add icons at the bottom of the sidebar
   twitter:        qwtel
-  github:         qwtel
+  github:         durling
+  weibo:          '603451688'
 
   # Setting a disqus username will enable the comment section
   disqus:         qwtel

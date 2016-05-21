@@ -112,7 +112,6 @@ a:focus::before {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.75);
   background-color: #202020!important;
-  /*background-image: url('../img/nap.jpg')!important;*/
   text-align: left;
 
   background-size: cover;
