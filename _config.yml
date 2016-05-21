@@ -14,7 +14,6 @@ description:      >
   曾经小僧 >
   web前端一枚...
   [cengseng.com]()
-  山有木兮木有枝.
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [jekyll,hyde,nodejs,git]
@@ -27,7 +26,7 @@ author:
   name:           'Florian Klampfer'
 
   # Setting social media usernames will add icons at the bottom of the sidebar
-  twitter:        qwtel
+  twitter:        '603451688'
   github:         durling
   weibo:          '603451688'
 
@@ -42,7 +41,7 @@ author:
     山有木兮木有枝
     曾经小僧难化猿
 
-    Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
+    #Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
 
 kramdown:
   math_engine: mathjax
