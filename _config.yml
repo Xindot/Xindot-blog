@@ -31,7 +31,7 @@ author:
   weibo:          '603451688'
 
   # Setting a disqus username will enable the comment section
-  disqus:         'durling'
+  disqus:         ''
 
   # This photo will be used in the about section
   photo:          /public/img/cengseng.jpg
@@ -41,7 +41,7 @@ author:
     山有木兮木有枝
     曾经小僧难化猿
 
-    #Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
+  #Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
 
 kramdown:
   math_engine: mathjax
