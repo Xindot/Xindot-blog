@@ -73,8 +73,8 @@
   
   <li>
     <h4>
-      <a href="/2016/03/08/introducing-hydejack/">
-        <span>Introducing Hydejack</span>
+      <a href="/2016/03/08/123-123/">
+        <span>123 123</span>
         <small>03/08</small>
       </a>
     </h4>
@@ -131,8 +131,8 @@
   
   <li>
     <h4>
-      <a href="/2013/12/28/introducing-hyde/">
-        <span>Introducing Hyde</span>
+      <a href="/2013/12/28/123456/">
+        <span>123456</span>
         <small>12/28</small>
       </a>
     </h4>
@@ -172,8 +172,8 @@
   
   <li>
     <h4>
-      <a href="/2012/02/06/focus-blogs/">
-        <span>推荐值得一看的IT博客</span>
+      <a href="/2012/02/06/worthy-blogs/">
+        <span>推荐值得一看的个人IT博客</span>
         <small>02/06</small>
       </a>
     </h4>
@@ -182,12 +182,23 @@
 
 
       
+	<!-- <span class="ds-thread-count" data-thread-key="" data-count-type="comments"></span> -->
+  
 <!-- 多说评论框 start -->
+
 	<div class="ds-thread" data-thread-key="" data-title="Blog" data-url="http://blog.nuoluan.com/"></div>
 <!-- 多说评论框 end -->
+	<ul class="ds-recent-visitors" data-num-items="20"></ul> 
+
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script src="/public/js/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"nuoluanblog"};
+		// console.log("");
+		if (""=="") {
+			$('.ds-thread').attr('data-thread-key','index');
+		};
+
+		var duoshuoQuery = {short_name:"nuoluanblog"};
 		(function() {
 			var ds = document.createElement('script');
 			ds.type = 'text/javascript';ds.async = true;
@@ -196,6 +207,7 @@
 			(document.getElementsByTagName('head')[0] 
 			 || document.getElementsByTagName('body')[0]).appendChild(ds);
 		})();
+
 	</script>
 <!-- 多说公共JS代码 end -->
     </main>
@@ -287,9 +299,9 @@
 </aside>
 
 
-    
-
 
     <script src="/public/js/hydejack.js" async></script>
+    
+
   </body>
 </html>
