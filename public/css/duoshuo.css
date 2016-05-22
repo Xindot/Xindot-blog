@@ -43,3 +43,77 @@
     -webkit-transform: rotateZ(360deg);
     -moz-transform: rotateZ(360deg);
 }
+
+
+.ds-sync{
+	/*display:none !important;*/
+}/*隐藏评论框底部分享*/
+
+.ds-textarea-wrapper.ds-rounded-top{
+	background: #ffffff!important;
+	/*background: #ffffff url(你想设置的评论框背景图片地址) no-repeat right bottom !important;*/
+}/*定义评论框背景*/
+
+#ds-reset .ds-gradient-bg{
+	background:none !important;
+}/*设置评论框下方渐变*/
+
+#ds-thread #ds-reset .ds-post-button{
+	font-family: ‘微软雅黑’ ‘Microsoft Yahei’!important;
+	font-weight: bold;
+	font-size:12px;
+	background:none !important;
+	color:#49976b !important;
+}/*定义发布按钮字体以及渐变背景*/
+
+#ds-thread #ds-reset .ds-sort {
+	display:none;
+}/*隐藏最新最热等*/
+
+#ds-thread #ds-reset .ds-powered-by{
+	display:none;
+}/*隐藏多说底部版权*/
+
+#ds-reset .ds-highlight{
+	color:#49976b !important;
+}/*定义高亮字体颜色*/
+#ds-thread #ds-reset #ds-bubble a{
+	color: #49976b !important;
+}/*定义评论框内其他高亮颜色*/
+#ds-thread #ds-reset #ds-bubble {
+	color: #49976b !important;
+}/*定义评论框内其他高亮颜色*/
+#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a{
+	color: #49976b !important;
+}/*定义评论框内其他高亮颜色*/
+#ds-thread #ds-reset a.ds-comment-context:hover{
+	color: #49976b !important;
+}/*定义评论框内其他高亮颜色*/
+#ds-thread #ds-reset a.ds-comment-context{
+	color: #49976b !important;
+}/*定义评论框内其他高亮颜色*/
+
+
+#ds-bubble{
+	display:none;
+}/*隐藏更多评论浮动框*/
+
+
+.ds-actions label {
+    margin: 5px!important;
+}
+.ds-actions label span{
+	display: none!important;
+}
+.ds-actions label input{
+	margin-right: 3px!important;
+}
+.ds-dialog-footer a{
+	background: none!important;
+	background-image: none!important;
+}
+.ds-dialog-footer span{
+	display: none!important;
+}
+
+
