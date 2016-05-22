@@ -34,12 +34,14 @@ author:
   # disqus:         ''
 
   # This photo will be used in the about section
-  photo:          /public/img/cengseng.jpg
+  photo:          /public/img/luanshu.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
-    山有木兮木有枝
-    曾经沧海难为水
+    山有木兮
+    在河之洲
+    取次花丛
+    谓我何求
 
   #Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
 
