@@ -31,7 +31,7 @@ author:
   weibo:          '603451688'
 
   # Setting a disqus username will enable the comment section
-  disqus:         ''
+  # disqus:         ''
 
   # This photo will be used in the about section
   photo:          /public/img/cengseng.jpg
