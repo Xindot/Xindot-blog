@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 个人简历
-<!-- tags: durling -->
+tags: []
 ---
 
 > **基本信息**
