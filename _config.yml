@@ -11,9 +11,9 @@ title:            诺栾博客
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  曾经小僧 >
+  [栾叔]() >
   web前端一枚...
-  [cengseng.com](http://weibo.com/603451688){:target="_blank"}
+  [blog.nuoluan.com]()
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [jekyll,hyde,nodejs,git]
@@ -39,7 +39,7 @@ author:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
     山有木兮木有枝
-    曾经小僧难化猿
+    曾经沧海难为水
 
   #Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
 

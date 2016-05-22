@@ -15,6 +15,6 @@ title: 关于博客
 
 {{ site.author.about }}
 
->*微博[@曾经小僧](http://weibo.com/603451688){:target="_blank"}*
->*简书[@曾经小僧](http://www.jianshu.com/users/423b873cad24/latest_articles){:target="_blank"}*
+>*微博[@栾叔](http://weibo.com/603451688){:target="_blank"}*
+>*简书[@栾叔](http://www.jianshu.com/users/423b873cad24/latest_articles){:target="_blank"}*
 
