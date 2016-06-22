@@ -1,70 +1,47 @@
 ---
 layout: post
-title: js数组去重【整理稿】
-tags: [js]
+title: Linux 连续执行多条命令的方法【整理稿】
+tags: [nodejs]
 ---
 
-### 1.
-	Array.prototype.unique1 = function () {
-	  var n = []; //一个新的临时数组
-	  for (var i = 0; i < this.length; i++) //遍历当前数组
-	  {
-	    //如果当前数组的第i已经保存进了临时数组，那么跳过，
-	    //否则把当前项push到临时数组里面
-	    if (n.indexOf(this[i]) == -1) n.push(this[i]);
-	  }
-	  return n;
-	}
+>多个命令可以放在一行上，其执行情况得依赖于用在命令之间的分隔符。
+
+### 如果每个命令被一个分号 (;) 所分隔，
+
+那么命令会连续的执行下去，如：引用
 
 
-### 2.
-	Array.prototype.unique2 = function()
-	{
-		var n = {},r=[]; //n为hash表，r为临时数组
-		for(var i = 0; i < this.length; i++) //遍历当前数组
-		{
-			if (!n[this[i]]) //如果hash表中没有当前项
-			{
-				n[this[i]] = true; //存入hash表
-				r.push(this[i]); //把当前数组的当前项push到临时数组里面
-			}
-		}
-		return r;
-	}
-
-### 3.
-	Array.prototype.unique3 = function()
-	{
-		var n = [this[0]]; //结果数组
-		for(var i = 1; i < this.length; i++) //从第二项开始遍历
-		{
-			//如果当前数组的第i项在当前数组中第一次出现的位置不是i，
-			//那么表示第i项是重复的，忽略掉。否则存入结果数组
-			if (this.indexOf(this[i]) == i) n.push(this[i]);
-		}
-		return n;
-	}
+	beyes@linux-beyes:/proc> printf "%s/n" "This is executed" ; printf "%s/n" "And so is this"
+	This is executed
+	And so is this
 
 
-### 4.
-	Array.prototype.unique4 = function()
-	{
-		this.sort();
-		var re=[this[0]];
-		for(var i = 1; i < this.length; i++)
-		{
-			if( this[i] !== re[re.length-1])
-			{
-				re.push(this[i]);
-			}
-		}
-		return re;
-	}
+### 如果每个命令被 && 号分隔，
+那么这些命令会一直执行下去，如果中间有错误的命令存在，则不再执行后面的命令，没错则执行到完为止：引用
 
+	beyes@linux-beyes:/proc> date && printf "%s/n" "The date command was successful"
+	2009年 08月 28日 星期五 18:28:16 CST
+	The date command was successful
 
-其中第1种和第3种方法都用到了数组的indexOf方法。此方法的目的是寻找存入参数在数组中第一次出现的位置。很显然，js引擎在实现这个方法的时候会遍历数组直到找到目标为止。所以此函数会浪费掉很多时间。 而第2中方法用的是hash表。把已经出现过的通过下标的形式存入一个object内。下标的引用要比用indexOf搜索数组快的多。
+所有命令成功执行完毕。引用
 
-    为了判断这三种方法的效率如何，我做了一个测试程序，生成一个10000长度的随机数组成的数组，然后分别用几个方法来测试执行时间。 结果表明第二种方法远远快于其他两种方法。 但是内存占用方面应该第二种方法比较多，因为多了一个hash表。这就是所谓的空间换时间。  就是这个 测试页面，你也可以去看看。
+	beyes@linux-beyes:/proc> date && llk && printf "%s/n" "The date command was successful"
+	2009年 08月 28日 星期五 18:28:52 CST
+	bash: llk: command not found
 
+后面的成功执行提示语句不会被输出，因为 llk 命令无法识别。
 
-    这个方法的思路是先把数组排序，然后比较相邻的两个值。 排序的时候用的JS原生的sort方法，JS引擎内部应该是用的快速排序吧。 最终测试的结果是此方法运行时间平均是第二种方法的三倍左右，不过比第一种和第三种方法快了不少。
+### 如果每个命令被双竖线(||)分隔符分隔，
+如果命令遇到可以成功执行的命令，那么命令停止执行，即使后面还有正确的命令则后面的所有命令都将得不到执行。假如命令一开始就执行失败，那么就会执行 || 后的下一个命令，直到遇到有可以成功执行的命令为止，假如所有的都失败，则所有这些失败的命令都会被尝试执行一次：引用
+
+	beyes@linux-beyes:/proc> date || ls / || date 'duck!' || uname -a
+	2009年 08月 28日 星期五 18:33:18 CST
+
+第一个命令成功执行！后面的所有命令不再得到执行。引用
+
+	beyes@linux-beyes:/proc> date 'duck!' || dakkk || uname -a
+	date: 无效的日期 “duck!”
+	bash: dakkk: command not found
+	Linux linux-beyes 2.6.27.29-0.1-pae #1 SMP 2009-08-15 17:53:59 +0200 i686 i686 i386 GNU/Linux
+
+前面的两个命令都失败了，直到找到最后一个可以成功执行的命令为止。
