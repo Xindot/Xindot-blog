@@ -22,7 +22,7 @@ tags: []
 | *Bootstrap*              | *85%*             |       |
 | *JS , jQuery*            | *70% , 85%*       | *价格日历控件 , 富文本编辑器(ueditor、simditor)* |
 | *NodeJs*                 | *75%*             | *log4js*      |
-| *AvalonJs , AngularJs , Vue.js*   | *80% , 50% , 80%*       |       |
+| *Avalon.js , Angular.js , Vue.js*   | *80% , 50% , 80%*       |       |
 | *git , linux*            | *90% , 50%*       |       |
 | *UI库*                   |     /              |  *OniUI , layUI*    |
 
