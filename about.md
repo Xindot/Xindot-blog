@@ -19,6 +19,7 @@ title: 关于博客
 >*简书[@栾叔](http://www.jianshu.com/users/423b873cad24/latest_articles){:target="_blank"}*
 >*知乎[@栾叔](https://www.zhihu.com/people/Durling_Xie){:target="_blank"}*
 >*豆瓣[@栾叔](https://www.douban.com/people/Durling/){:target="_blank"}*
+>*SF[@栾叔](https://segmentfault.com/u/durling){:target="_blank"}*
 
 
 ![Mou icon](/public/img/hangzhou.jpg)
