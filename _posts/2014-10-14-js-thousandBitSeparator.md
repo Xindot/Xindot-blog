@@ -1,6 +1,6 @@
 ---
 layout: post
-title: js实现千位分隔符的思路及代码
+title: js实现金额‘千位分隔符’的思路及代码
 tags: [js]
 ---
 
