@@ -1,6 +1,6 @@
 ---
 layout: post
-title: js实现金额‘千位分隔符’的思路及代码
+title: js实现金额‘千位分隔符’的思路及代码（+优化版）
 tags: [js]
 ---
 
@@ -55,4 +55,38 @@ tags: [js]
 
 >
 测试有效
+
+
+### 后来看到同事发布的优化方案，不拿锅里来觉得对不起他
+
+	function splitK(num) {
+	  var decimal = String(num).split('.')[1] || '';//小数部分
+	  var tempArr = [];
+	  var revNumArr = String(num).split('.')[0].split("").reverse();//倒序
+	  for (i in revNumArr){
+	    tempArr.push(revNumArr[i]);
+	    if((i+1)%3 === 0 && i != revNumArr.length-1){
+	      tempArr.push(',');
+	    }
+	  }
+	  var zs = tempArr.reverse().join('');//整数部分
+	  return decimal?zs+'.'+decimal:zs;
+	}
+	var num = '123456789.123';
+	console.log(splitK(num));
+	//输出：123,456,789.123
+
+>
+思路更简单：
+先分离出小数部分；
+对整数部分逆序为数组；
+每三个数字插入一个逗号，如果是3的倍数位则最后一个不插入；
+再逆序回来，拼接小数部分（如果有的话）。
+[查看原文https://segmentfault.com/a/1190000005906366](https://segmentfault.com/a/1190000005906366){:target="_blank"}
+
+>
+点赞
+
+>
+测试如果是数字类型可能提示undefined,对num加个String()即可
 
