@@ -7,7 +7,7 @@ url:              ''
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            前端木有枝
+title:            端木有枝
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
