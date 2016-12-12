@@ -11,8 +11,8 @@
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
 
-hyde:
-  name: Hyde
+vue:
+  name: vue
   image: /public/img/hyde.jpg
   color: '#949667'
   description: >
