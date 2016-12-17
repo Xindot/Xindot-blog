@@ -11,9 +11,9 @@ title:            慕有枝
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  [Durling]() >
+  [myz]() >
   关注前端...
-  [durlingxie.com]()
+  [immyz.com]()
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [js,vue,nodejs,git]
