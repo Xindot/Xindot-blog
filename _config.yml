@@ -7,13 +7,13 @@ url:              ''
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            慕有枝
+title:            木木木有枝
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
   [Durling]() >
   关注前端...
-  [durlingxie.com]()
+  慕有知[durlingxie.com]()
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [js,vue,nodejs,git]
