@@ -24,5 +24,5 @@ title: 关于博客
 
 ![Mou icon](http://myz-blog.triplong.com/hangzhou.jpg)
 
-
+[个人简历](/2015/05/20/durling-resume/)
 
