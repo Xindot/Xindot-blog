@@ -8,7 +8,7 @@ tags: [js]
 
 ### 概述
 
-Robert C. Martin 在 《代码整洁之道》 中提到的软件工程原则，同样适用于 JavaScript。这不是一个风格参考。它指导如何用 JavaScript 编写可读、可复用、可重构的软件。
+Robert C. Martin 在 [《代码整洁之道》](http://vdisk.weibo.com/s/zrPOK0IqWgbk1){:target="_blank"} 中提到的软件工程原则，同样适用于 JavaScript。这不是一个风格参考。它指导如何用 JavaScript 编写可读、可复用、可重构的软件。
 
 并不是每一个原则都必须严格遵循，甚至很少得到大家的认同。它们仅用于参考，不过要知道这些原则都是《代码整洁之道》的作者们累积多年的集体经验。
 
