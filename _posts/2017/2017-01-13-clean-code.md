@@ -4,7 +4,7 @@ title: js小结：JavaScript 代码整洁之道（一）
 tags: [js]
 ---
 
-![Mou icon](/public/img/clean-code.jpg)
+![Mou icon](http://ojscbtv53.bkt.clouddn.com/clean-code.jpg)
 
 ### 概述
 

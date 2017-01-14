@@ -22,7 +22,7 @@ title: 关于博客
 >*[@SF](https://segmentfault.com/u/durling){:target="_blank"}*
 
 
-![Mou icon](/public/img/hangzhou.jpg)
+![Mou icon](http://ojscbtv53.bkt.clouddn.com/hangzhou.jpg)
 
 
 
