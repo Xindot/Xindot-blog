@@ -19,7 +19,7 @@ description:      >
 sidebar_tags:     [js,vue,nodejs,git]
 
 # Fallback image and color if not overwritten for tag or post
-image:            http://ojscbtv53.bkt.clouddn.com/nap.jpg
+image:            http://myz-blog.triplong.com/nap.jpg
 color:            '#A85641'
 
 author:
@@ -34,7 +34,7 @@ author:
   # disqus:         ''
 
   # This photo will be used in the about section
-  photo:          http://ojscbtv53.bkt.clouddn.com/luanshu.jpg
+  photo:          http://myz-blog.triplong.com/luanshu.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
