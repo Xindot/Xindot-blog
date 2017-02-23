@@ -15,7 +15,7 @@ description:      >
   [myz.triplong.com]()
 
 # The tags listed as entries in the sidebar
-sidebar_tags:     [js,vue,nodejs,git]
+sidebar_tags:     [js,react,vue,nodejs,git]
 
 # Fallback image and color if not overwritten for tag or post
 image:            http://myz-blog.triplong.com/nap.jpg
