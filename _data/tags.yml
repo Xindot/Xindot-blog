@@ -13,7 +13,7 @@
 
 vue:
   name: Vue
-  image: http://myz-blog.triplong.com/hyde.jpg
+  image: http://myz-blog.triplong.com/vue.jpg
   color: '#949667'
   description: >
     Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
