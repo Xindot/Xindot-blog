@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 鱼和星的故事未知结局
+title: 鱼和星的故事
 tags: []
 ---
 
