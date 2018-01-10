@@ -25,9 +25,9 @@ author:
   name:           'Florian Klampfer'
 
   # Setting social media usernames will add icons at the bottom of the sidebar
-  twitter:        '6034516078079788'
+  # twitter:        '6034516078079788'
   github:         'durling'
-  weibo:          '603451688999999999'
+  weibo:          '603451688'
 
   # Setting a disqus username will enable the comment section
   # disqus:         ''
