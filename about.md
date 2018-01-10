@@ -22,7 +22,7 @@ title: 关于博客
 >*[@SF](https://segmentfault.com/u/durling){:target="_blank"}*
 
 
-![Mou icon](http://myz-blog.triplong.com/hangzhou.jpg)
+![Mou icon](http://myz-blog.nuoluan.com/hangzhou.jpg)
 
 >*[木有枝-个人简历-IT](/2015/05/20/durling-resume/)*
 

@@ -12,13 +12,13 @@ title:            木有枝
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
   关注前端...
-  [immyz.com]()
+  [myz.nuoluan.com]()
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [js,react,vue,nodejs,git]
 
 # Fallback image and color if not overwritten for tag or post
-image:            http://myz-blog.triplong.com/nap.jpg
+image:            http://myz-blog.nuoluan.com/nap.jpg
 color:            '#A85641'
 
 author:
@@ -33,7 +33,7 @@ author:
   # disqus:         ''
 
   # This photo will be used in the about section
-  photo:          http://myz-blog.triplong.com/luanshu.jpg
+  photo:          http://myz-blog.nuoluan.com/luanshu.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
