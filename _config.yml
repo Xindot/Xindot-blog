@@ -7,12 +7,11 @@ url:              ''
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            6H5
+title:            6H5博客
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  一枚前端...
-  []()
+  [blog.6h5.cn]()
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [js,react,vue,nodejs,git]
@@ -22,7 +21,7 @@ image:            http://myz-blog.nuoluan.com/nap.jpg
 color:            '#A85641'
 
 author:
-  name:           'Florian Klampfer'
+  name:           '6H5'
 
   # Setting social media usernames will add icons at the bottom of the sidebar
   # twitter:        ''

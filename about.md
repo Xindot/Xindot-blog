@@ -26,5 +26,5 @@ title: 关于博客
 
 >*[木有枝-个人简历-IT](/2015/05/20/durling-resume/)*
 
->*[我的猫博客·毛毛de日常](http://maomao.nuoluan.com/){:target="_blank"}*
+>*[猫博客·MaoMao日常](http://mm.6h5.cn){:target="_blank"}*
 
