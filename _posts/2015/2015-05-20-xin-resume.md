@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 个人简历 - IT
+title: 谢鑫个人简历
 tags: []
 ---
 
 > **基本信息**
 
-| *Name*      | *Durling Xie* | 
-| *Sex*      | *Just A Baby*         | 
-| *Age*      | *Forever 25*          |
-| *School of Graduation*   | *Hangzhou Eat University*      | 
-| *Email*      | *878877528@qq.com* |
+| *Name*      | *谢鑫* | 
+| *Sex*      | *男*         | 
+| *Age*      | *28*          |
+| *School of Graduation*   | *杭州师范大学*      | 
+| *Email*      | *x@6h5.cn* |
 
 ***
 
