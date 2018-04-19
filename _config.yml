@@ -7,12 +7,12 @@ url:              ''
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            木有枝
+title:            6H5
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  关注前端...
-  [myz.nuoluan.com]()
+  一枚前端...
+  []()
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [js,react,vue,nodejs,git]
@@ -26,7 +26,7 @@ author:
 
   # Setting social media usernames will add icons at the bottom of the sidebar
   # twitter:        ''
-  github:         'durling'
+  github:         '6H5'
   # weibo:          '603451688'
 
   # Setting a disqus username will enable the comment section
