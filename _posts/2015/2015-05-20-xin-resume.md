@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 谢鑫个人简历
+title: 个人简历
 tags: []
 ---
 
 > **基本信息**
 
-| *Name*      | *谢鑫* | 
-| *Sex*      | *男*         | 
+| *Name*      | *Xindot* | 
+| *Gender*      | *Male*         | 
 | *Age*      | *28*          |
-| *School of Graduation*   | *杭州师范大学*      | 
-| *Email*      | *x@6h5.cn* |
+| *School of Graduation*   | *Hangzhou Normal University*      | 
+| *Email*      | *xindot@qq.com* |
 
 ***
 
@@ -45,8 +45,4 @@ tags: []
 | *NodeJs* | [Node.js 教程 - 菜鸟教程](http://www.runoob.com/nodejs/nodejs-tutorial.html){:target="_blank"} / [Node初学者入门，一本全面的NodeJS教程 - OurJS](http://ourjs.com/detail/529ca5950cb6498814000005){:target="_blank"} / [玩转Nodejs日志管理log4js - 粉丝日志](http://blog.fens.me/nodejs-log4js/){:target="_blank"} / [linux重定向及nohup不输出的方法【整理稿】- 诺栾博客](http://blog.nuoluan.com/2015/05/20/linux-nohup/){:target="_blank"} |
 | *UI* | [OniUI - 去哪儿团队(司徒正美)](http://hotelued.qunar.com/oniui/index.html#!/widgets){:target="_blank"} / [layUI - 跨设备模块化前端框架](http://www.layui.com/){:target="_blank"} / [超强的拖拽排序插件Sortable](http://www.jqcool.net/sortable.html){:target="_blank"}[【demo】](http://www.jqcool.net/demo/201408/sortable/){:target="_blank"} |
 | *Vue.js* | [Vue.js--60分钟快速入门 - ITNOSE](http://www.itnose.net/detail/6524500.html){:target="_blank"} / [Vue.js + webpack 项目实践 - ITNOSE](http://www.itnose.net/detail/6304516.html){:target="_blank"} / [vue，angular，avalon这三种MVVM框架之间有什么优缺点？ - 知乎](https://www.zhihu.com/question/27791075){:target="_blank"} / [Vue教程 - Vue官网](http://cn.vuejs.org/guide/index.html){:target="_blank"}|
-
 ---
-
-
-

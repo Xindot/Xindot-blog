@@ -13,7 +13,7 @@
 
 vue:
   name: Vue
-  image: http://myz-blog.nuoluan.com/vue.jpg
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#949667'
   description: >
     Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
@@ -21,30 +21,30 @@ vue:
 
 js:
   name: Js
-  image: http://myz-blog.nuoluan.com/js.jpg
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#8734B5'
   description: >
     JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
 
 nodejs:
   name: NodeJs
-  image: http://myz-blog.nuoluan.com/nodejs.jpg
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#009999'
-  description: > 
+  description: >
     Node.js是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。
 
 git:
   name: Git
-  image: http://myz-blog.nuoluan.com/git.jpg
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#006666'
-  description: > 
+  description: >
     Node.js是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。
 
 react:
   name: React
-  image: http://myz-blog.nuoluan.com/react.gif
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#786459'
-  description: > 
+  description: >
     React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设Instagram 的网站。做出来以后，发现这套东西很好用，就在2013年5月开源了。
 
 

@@ -1,1 +1,1 @@
-6H5博客 By Jekyll http://blog.6h5.cn
+新刀博客 By Jekyll http://xindot.com

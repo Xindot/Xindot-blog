@@ -7,39 +7,38 @@ url:              ''
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            6H5博客
+title:            新刀の博客
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  [blog.6h5.cn]()
+  [Xindot.com]()
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [js,react,vue,nodejs,git]
 
 # Fallback image and color if not overwritten for tag or post
-image:            http://myz-blog.nuoluan.com/nap.jpg
+image:            'http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg'
 color:            '#A85641'
 
 author:
-  name:           '6H5'
+  name:           '新刀'
 
   # Setting social media usernames will add icons at the bottom of the sidebar
   # twitter:        ''
-  github:         '6H5'
-  # weibo:          '603451688'
+  github:         'xindot'
+  weibo:          '603451688'
+  zhihu:          'Durling_Xie'
 
   # Setting a disqus username will enable the comment section
   # disqus:         ''
 
   # This photo will be used in the about section
-  photo:          http://myz-blog.nuoluan.com/luanshu.jpg
+  photo:          'http://img.6h5.cn/xindot-blog/Xindot-logo-1.png'
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:          |
-    山有木兮
-    在河之洲
-    取次花丛
-    谓我何求
+    **在**你身边
+    **恰**到好处
 
   #Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
 

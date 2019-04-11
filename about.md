@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于博客
+title: About Me
 ---
 
 {% comment %}
@@ -22,9 +22,9 @@ title: 关于博客
 >*[@SF](https://segmentfault.com/u/durling){:target="_blank"}*
 
 
-![Mou icon](http://myz-blog.nuoluan.com/hangzhou.jpg)
+![Mou icon](http://img.6h5.cn/xindot-blog/hangzhou.jpg)
 
->*[木有枝-个人简历-IT](/2015/05/20/durling-resume/)*
+>*[个人简历-IT](/2015/05/20/xin-resume/)*
 
->*[猫博客·MaoMao日常](http://mm.6h5.cn){:target="_blank"}*
+>*[猫博客 · MaoMao日常](http://maomao.nuoluan.com){:target="_blank"}*
 
