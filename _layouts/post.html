@@ -35,10 +35,10 @@ layout: default
 
 {% if site.author.about %}
 <aside class="author">
-  <h2 class="aside-title">About</h2>
+  <h2 class="aside-title">关于作者</h2>
 
   {% if site.author.photo %}
-  <img class="me" src="{{ site.author.photo }}" alt="{{ site.author.name }}"/>
+  <img class="me rotate-infinite" src="{{ site.author.photo }}" alt="{{ site.author.name }}"/>
   {% endif %}
 
   {{ site.author.about | markdownify }}
@@ -46,7 +46,7 @@ layout: default
 {% endif %}
 
 <aside class="related">
-  <h2 class="aside-title">Related Posts</h2>
+  <h2 class="aside-title">相关文章</h2>
   <ul class="related-posts">
     {% assign plusone = false %}
     {% assign tag_name = page.tags[0] %}

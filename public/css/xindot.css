@@ -19,3 +19,23 @@
     -webkit-font-smoothing: antialiased!important;
 
 }
+
+
+
+ 
+.rotate-infinite{
+  transition: 0.5s;
+  transform-origin: center;  
+  animation: rotate 60s linear infinite;  /*开始动画后无限循环，用来控制rotate*/
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  50%{
+  	transform:rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

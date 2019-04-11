@@ -10,7 +10,7 @@ title: About Me
 {% endcomment %}
 
 {% if site.author.photo %}
-  ![{{ site.author.name }}]({{ site.author.photo }}){:.me}
+  ![{{ site.author.name }}]({{ site.author.photo }}){:.me .rotate-infinite}
 {% endif %}
 
 {{ site.author.about }}

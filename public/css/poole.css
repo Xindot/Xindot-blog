@@ -37,7 +37,7 @@ body {
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 @media (min-width: 38em) {
   html {
@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  color: #515151;
+  color: #000;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -102,6 +102,7 @@ p {
 
 strong {
   color: #303030;
+  font-size: 22px;
 }
 
 
@@ -157,19 +158,21 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  line-height: 1.4;
+  line-height: 1;
   /* Prevent code linebreaks and allow side-scrolling (much better readability on mobile) */
-  /*white-space: pre;
+  white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
-  word-wrap: break-word;*/
+  word-wrap: break-word;
+
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: #f9f9f9;
-
+  /*background-color: #f9f9f9;*/
+  background-color: #795548;
+  color: #fff;
   /* Make code same width as regular text, and scroll the full page width on mobile */
-  margin-left: -1rem;
-  margin-right: -1rem;
+  /*margin-left: -1rem;
+  margin-right: -1rem;*/
 }
 pre code {
   padding: 0;
@@ -193,15 +196,18 @@ pre code {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  color: #A85641;
+  border-left: .5rem solid #A85641;
+  background-color: #f7f7f7;
+  font-size: .9rem;
+  text-align: justify;
 }
 blockquote p:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 30em) {
   blockquote {
-    padding-right: 5rem;
+    padding-right: 1.75rem;
     padding-left: 1.25rem;
   }
 }
@@ -253,10 +259,12 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  background-color: #795548;
+  color: #fff;
+  /*margin-left: -1rem;
+  margin-right: -1rem;*/
+  text-align: justify;
+  font-size: .9rem;
 }
 
 
@@ -367,6 +375,7 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #eee;
+  opacity: .5;
 }
 
 /* Footnotes */
