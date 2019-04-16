@@ -7,7 +7,7 @@ url:              ''
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ''
 
-title:            新刀の博客
+title:            点心 の 博客
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
@@ -21,11 +21,11 @@ image:            http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
 color:            '#A85641'
 
 author:
-  name:           新刀
+  name:           点心
 
   # Setting social media usernames will add icons at the bottom of the sidebar
   # twitter:        ''
-  github:         xindot
+  github:         Xindot
   weibo:          '603451688'
   zhihu:          Durling_Xie
   jianshu:        423b873cad24
