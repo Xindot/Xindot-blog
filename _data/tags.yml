@@ -21,7 +21,7 @@ vue:
 js:
   name: Js
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
-  color: '#313330'
+  color: '#3194d0'
   description: >
     对JavaScript的研究还是前途漫漫，非专业出生就需要花费更多的时间
 

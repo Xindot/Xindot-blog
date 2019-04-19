@@ -282,7 +282,7 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
 
   /* Prevent side-scrolling on mobile */
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   position: relative;
 }
 
