@@ -14,7 +14,7 @@ description:      >
   [Xindot.com]()
 
 # The tags listed as entries in the sidebar
-sidebar_tags:     [js,react,vue,nodejs,git]
+sidebar_tags:     [js,react,vue,nodejs,git,css]
 
 # Fallback image and color if not overwritten for tag or post
 image:            http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg

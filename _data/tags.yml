@@ -16,36 +16,39 @@ vue:
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#4ec08d'
   description: >
-    Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
-    It’s based on Poole, the Jekyll butler.
+    使用了Vue之后，就很少用jQuery了
 
 js:
   name: Js
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#313330'
   description: >
-    JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
+    对JavaScript的研究还是前途漫漫，非专业出生就需要花费更多的时间
 
 nodejs:
   name: NodeJs
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#689f63'
   description: >
-    Node.js是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。
+    有了NodeJs之后，开始对服务器有了更多的兴趣
 
 git:
   name: Git
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#006666'
   description: >
-    Node.js是一个Javascript运行环境(runtime)。实际上它是对Google V8引擎进行了封装。V8引 擎执行Javascript的速度非常快，性能非常好。Node.js对一些特殊用例进行了优化，提供了替代的API，使得V8在非浏览器环境下运行得更好。
+    用Git做团队代码的协同和维护真的很舒服
 
 react:
   name: React
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#61dafb'
   description: >
-    React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设Instagram 的网站。做出来以后，发现这套东西很好用，就在2013年5月开源了。
+    据说阿里人都在用这个，也要赶紧学起来
 
-
-
+css:
+  name: CSS
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
+  color: '#1989fa'
+  description: >
+    CSS是基础，深入觉知是一片蓝海
