@@ -7,9 +7,9 @@ tags: [js]
 
 > 问题源头：*[webpack模板里import路径中@符号是什么意思？](https://blog.csdn.net/qq_32963841/article/details/80075872){:target="_blank"}*
 
-![import ShuttleBox from '@/components/ShuttleBox'](https://upload-images.jianshu.io/upload_images/59074-053fe44f4488aa7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![jsconfig.json](https://upload-images.jianshu.io/upload_images/59074-500ed655a9a19d04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![jsconfig.json配置](https://upload-images.jianshu.io/upload_images/59074-5cfd08aae68e14be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![import ShuttleBox from '@/components/ShuttleBox'](http://img.6h5.cn/xindot-blog/2019/01/24/vscode-jsconfig-json/59074-053fe44f4488aa7b.png)
+![jsconfig.json](http://img.6h5.cn/xindot-blog/2019/01/24/vscode-jsconfig-json/59074-500ed655a9a19d04.png)
+![jsconfig.json配置](http://img.6h5.cn/xindot-blog/2019/01/24/vscode-jsconfig-json/59074-5cfd08aae68e14be.png)
 
 ### 什么是jsconfig.json？
 目录中存在jsconfig.json文件表示该目录是JavaScript项目的根目录。jsconfig.json文件指定根文件和 *[JavaScript语言服务](https://github.com/Microsoft/TypeScript/wiki/JavaScript-Language-Service-in-Visual-Studio){:target="_blank"}* 提供的功能选项。
@@ -26,9 +26,9 @@ Visual Studio Code的JavaScript支持可以在两种不同的模式下运行：
 
 ##### jsconfig.json的位置
 我们通过创建jsconfig.json文件将我们代码的这一部分（我们网站的客户端）定义为JavaScript项目。 将文件放在JavaScript代码的根目录下，如下所示。
-![](https://upload-images.jianshu.io/upload_images/59074-a893d0458a810472.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://img.6h5.cn/xindot-blog/2019/01/24/vscode-jsconfig-json/59074-a893d0458a810472.png)
 在更复杂的项目中，您可能在工作空间中定义了多个jsconfig.json文件。 您将需要执行此操作，以便不将一个项目中的代码建议为IntelliSense以在另一个项目中进行编码。 下面的插图是一个带有客户端和服务器文件夹的项目，显示了两个单独的JavaScript项目。
-![](https://upload-images.jianshu.io/upload_images/59074-2c1c32bf978a8928.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://img.6h5.cn/xindot-blog/2019/01/24/vscode-jsconfig-json/59074-2c1c32bf978a8928.png)
 
 #### 例子
 默认情况下，*[JavaScript语言服务](https://github.com/Microsoft/TypeScript/wiki/JavaScript-Language-Service-in-Visual-Studio){:target="_blank"}* 将分析并为JavaScript项目中的所有文件提供IntelliSense<sup>(智能感知)</sup>。 您需要指定要排除或包含的文件，以便提供正确的IntelliSense。
