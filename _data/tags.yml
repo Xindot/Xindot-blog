@@ -16,39 +16,55 @@ vue:
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#4ec08d'
   description: >
-    使用了Vue之后，就很少用jQuery了
+    Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式JavaScript框架。
+    与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，方便与第三方库或既有项目整合。
+    <a href="https://cn.vuejs.org/v2/guide/" target="_blank">教程</a>
 
 js:
   name: Js
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#3194d0'
   description: >
-    对JavaScript的研究还是前途漫漫，非专业出生就需要花费更多的时间
+    JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的编程语言。
+    虽然它是作为开发Web页面的脚本语言而出名的，但是它也被用到了很多非浏览器环境中，JavaScript 基于原型编程、多范式的动态脚本语言，并且支持面向对象、命令式和声明式（如函数式编程）风格。
+    <a href="https://www.w3school.com.cn/js/index.asp" target="_blank">教程</a>
 
 nodejs:
   name: NodeJs
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#689f63'
   description: >
-    有了NodeJs之后，开始对服务器有了更多的兴趣
+    Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
+    Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型。
+    Node 是一个让 JavaScript 运行在服务端的开发平台，它让 JavaScript 成为与PHP、Python、Perl、Ruby 等服务端语言平起平坐的脚本语言。
+    <a href="http://nodejs.cn/api/" target="_blank">文档</a>
 
 git:
   name: Git
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#006666'
   description: >
-    用Git做团队代码的协同和维护真的很舒服
+    Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。
+    Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。
+    <a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank">教程</a>
 
 react:
   name: React
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#61dafb'
   description: >
-    据说阿里人都在用这个，也要赶紧学起来
+    React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设Instagram 的网站。
+    做出来以后，发现这套东西很好用，就在2013年5月开源了。
+    <a href="https://react.docschina.org/tutorial/tutorial.html" target="_blank">教程</a>
 
 css:
   name: CSS
   image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
   color: '#1989fa'
   description: >
-    CSS是基础，深入觉知是一片蓝海
+    层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。
+    CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。
+    CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。
+    <a href="https://www.w3school.com.cn/css/index.asp" target="_blank">教程</a>
+
+
