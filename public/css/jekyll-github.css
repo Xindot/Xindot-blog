@@ -3,6 +3,7 @@
  * Courtesy of GitHub.com
  */
 
+.highlight .p { color: #cccccc; }
 .highlight .c { color: #999988; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
@@ -40,7 +41,7 @@
 .highlight .ne { color: #990000; font-weight: bold; }
 .highlight .nf { color: #990000; font-weight: bold; }
 .highlight .nn { color: #555555; }
-.highlight .nt { color: navy; }
+.highlight .nt { color: #f8c555; }
 .highlight .nv { color: teal; }
 .highlight .ow { font-weight: bold; }
 .highlight .w { color: #bbbbbb; }
@@ -51,7 +52,7 @@
 .highlight .sb { color: #dd1144; }
 .highlight .sc { color: #dd1144; }
 .highlight .sd { color: #dd1144; }
-.highlight .s2 { color: #dd1144; }
+.highlight .s2 { color: #7ec699; }
 .highlight .se { color: #dd1144; }
 .highlight .sh { color: #dd1144; }
 .highlight .si { color: #dd1144; }
