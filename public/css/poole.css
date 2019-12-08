@@ -97,7 +97,7 @@ h4, h5, h6 {
 /* Body text */
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   font-size: 16px;
   font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -160,7 +160,7 @@ code {
 pre {
   display: block;
   margin-top: 0;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
   padding: 1rem;
   line-height: 1;
   /* Prevent code linebreaks and allow side-scrolling (much better readability on mobile) */
@@ -194,13 +194,13 @@ pre code {
 
 .highlighter-rouge {
   border-radius: 5px;
-  margin: 0 2px;
-  color: #c7254e;
-  background-color: #f2f2f2;
-  padding: 2px 4px;
+  /*margin: 0 2px;*/
+  /*color: #c7254e;*/
+  /*background-color: #f2f2f2;*/
+  /*padding: 2px 4px;*/
   border: none;
   vertical-align: middle;
-  white-space: pre-wrap;
+  /*white-space: pre-wrap;*/
 }
 
 /* <del>Pygments</del> Rouge via Jekyll */

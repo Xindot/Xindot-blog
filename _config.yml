@@ -41,9 +41,25 @@ author:
     **在**你身边
     **恰**到好处
 
-  #Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
+  # Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
 
 kramdown:
   math_engine: mathjax
   math_engine_opts:
     preview: true
+
+# 附加
+attach:
+  index_right: # 首页右上 图片链接
+    - ['Nginx 完全解读指南','https://s.imooc.com/WGiCHZk','慕课网']
+  index_bottom: # 首页底部 图片链接
+    - ['Nginx 完全解读指南','https://s.imooc.com/WGiCHZk','慕课网']
+  post_bottom: # 文章底部 文字链接
+    - ['Nginx 完全解读指南','https://s.imooc.com/WGiCHZk','慕课网']
+  tag_center: # 标签分类底部 图片链接
+    - ['Nginx 完全解读指南','https://s.imooc.com/WGiCHZk','慕课网']
+  links: # 友情链接 文字链接
+    - ['张鑫旭','https://www.zhangxinxu.com/']
+    - ['羡辙','http://zhangwenli.com/']
+    - ['yuany','http://yuany.net/']
+

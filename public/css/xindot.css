@@ -18,6 +18,9 @@ html,h1, h3, h5 {
     font-family: Exo,'-apple-system','Open Sans',HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue','Hiragino Sans GB','Microsoft YaHei',Helvetica,Arial,sans-serif!important;
     -webkit-font-smoothing: antialiased!important;
 }
+em {
+    font-style: unset;
+}
  
 .rotate-infinite{
   transition: 0.5s;
