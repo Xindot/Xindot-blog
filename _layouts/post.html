@@ -102,3 +102,22 @@ layout: default
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </aside>
 {% endif %}
+
+{% if site.attach && site.attach.post_bottom %}
+<aside class="post-bottom">
+  <h2 class="aside-title">推荐课程</h2>
+  <ul style="padding-left: 0;list-style: none;">
+    {% for item in site.attach.post_bottom %}
+    <li>
+      <h4>
+        <a href="{{ item[1] }}" target="_blank">
+          <span>{{ item[0] }}</span>
+          <small style="font-size: 75%;color: #999;white-space: nowrap;">{{ item[2] }}</small>
+        </a>
+      </h4>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
+

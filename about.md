@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+
 ---
 
 {% comment %}
@@ -21,10 +22,15 @@ title: About Me
 >*[@豆瓣](https://www.douban.com/people/Durling/){:target="_blank"}*
 >*[@SF](https://segmentfault.com/u/durling){:target="_blank"}*
 
-
 ![Mou icon](http://img.6h5.cn/xindot-blog/hangzhou.jpg)
 
->*[个人简历-IT](/2015/05/20/xin-resume/)*
-
+###### 我的周边
+>*[个人简历-IT](/2015/05/20/xin-resume/)<br/>*
 >*[猫博客 · MaoMao日常](http://maomao.nuoluan.com){:target="_blank"}*
 
+---
+
+###### 友情链接
+{% if site.attach.links %}
+  {% for item in site.attach.links %} [{{ item[0] }}]({{item[1]}}){:target="_blank"} {% endfor %}
+{% endif %}

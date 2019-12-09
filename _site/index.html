@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Xindot &middot; 心刀 の 博客</title>
+  <title>
+  
+    
+      Xindot
+     
+    &middot; 心刀 の 博客
+  
+  </title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|PT+Serif:400,400italic,700,700italic" type="text/css">
@@ -39,7 +46,8 @@
   </style>
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/img/Xindot-logo.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/img/Xindot-logo.png">
   <link rel="shortcut icon" href="/public/favicon.ico">
 
   <!-- RSS -->
@@ -58,6 +66,18 @@
     <h2 id="y2019" class="page-title">2019</h2>
     <ul class="related-posts">
     
+  
+  <li>
+    <h4>
+      <a href="/2019/11/13/ployfill/">
+        <span>动态Polyfill</span>
+        <small>11/13</small>
+      </a>
+    </h4>
+  </li>
+  
+
+  
   
   <li>
     <h4>
@@ -111,6 +131,18 @@
     <h2 id="y2018" class="page-title">2018</h2>
     <ul class="related-posts">
     
+  
+  <li>
+    <h4>
+      <a href="/2018/06/12/wx-minip-echarts/">
+        <span>微信小程序中使用echarts</span>
+        <small>06/12</small>
+      </a>
+    </h4>
+  </li>
+  
+
+  
   
   <li>
     <h4>
@@ -591,18 +623,6 @@
 
   
   
-  <li>
-    <h4>
-      <a href="/2011/05/12/0000/">
-        <span>0</span>
-        <small>05/12</small>
-      </a>
-    </h4>
-  </li>
-  
-
-  
-  
     </ul><hr/>
     <h2 id="y2010" class="page-title">2010</h2>
     <ul class="related-posts">
@@ -610,13 +630,15 @@
   
   <li>
     <h4>
-      <a href="/2010/12/07/0001/">
-        <span>1</span>
+      <a href="/2010/12/07/jekyll-.yml/">
+        <span>jekyll博客中的配置文件 config.yml 写法</span>
         <small>12/07</small>
       </a>
     </h4>
   </li>
   </ul><hr/>
+
+
 
 
     </main>
@@ -629,6 +651,7 @@
 
 <div   id="_backdrop" class="backdrop"></div>
 <aside id="_sidebar" class="sidebar" style="background-image:url('http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg')">
+
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1><a href="/">心刀 の 博客</a></h1>
@@ -732,7 +755,18 @@
 </a>
       
     </div>
+
+  </div>  
+
+  <div style="text-align: right;font-size: 10px;opacity: .5;color: #fff;position: relative;z-index: 0;">
+    Powered by <a href="http://jekyllcn.com/" target="_blank" style="color: #fff;">Jekyll</a>
+    <p id="Year" style="font-size: 10px;"></p>
+    <script type="text/javascript">
+      // console.log(new Date().getFullYear())
+      document.getElementById('Year').innerHTML = 'By Xindot © ' + new Date().getFullYear()
+    </script>
   </div>
+
 </aside>
 
 

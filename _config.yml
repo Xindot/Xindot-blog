@@ -41,9 +41,37 @@ author:
     **在**你身边
     **恰**到好处
 
-  #Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
+  # Read my thoughts on [#software](http://qwtel.com/tag/software) and [#cryptoeconomics](http://qwtel.com/tag/cryptoeconomics).
 
 kramdown:
   math_engine: mathjax
   math_engine_opts:
     preview: true
+
+# 附加
+attach:
+  # 首页右上 图片链接
+  index_right: 
+    - ['Nginx 完全解读指南','https://s.imooc.com/WGiCHZk','慕课网']
+
+  # 首页底部 图片链接
+  index_bottom: 
+    - ['Nginx 完全解读指南','https://s.imooc.com/WGiCHZk','慕课网']
+  
+  # 文章底部 文字链接
+  post_bottom: 
+    - ['Git原理详解与实操指南','https://s.imooc.com/Wqtndwh','慕课网']
+    - ['Nginx 完全解读指南','https://s.imooc.com/WGiCHZk','慕课网']
+    - ['你不知道的前端性能优化技巧','https://s.imooc.com/WeRSmge','慕课网']
+    - ['一条龙的 Node·Vue·React 服务器部署','https://s.imooc.com/WlRnl3v','慕课网']
+
+  # 标签分类底部 图片链接
+  tag_center: 
+    - ['Nginx 完全解读指南','https://s.imooc.com/WGiCHZk','慕课网']
+
+  # 友情链接 文字链接
+  links:
+    - ['张鑫旭','https://www.zhangxinxu.com/']
+    - ['羡辙','http://zhangwenli.com/']
+    - ['yuany','http://yuany.net/']
+

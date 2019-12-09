@@ -19,6 +19,7 @@
 
 <div   id="_backdrop" class="backdrop"></div>
 <aside id="_sidebar" class="sidebar" {% if image %}style="background-image:url('{{ image }}')"{% endif %}>
+
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
@@ -69,5 +70,16 @@
         {% include links/icon-jianshu.html username=site.author.jianshu %}
       {% endif %}
     </div>
+
+  </div>  
+
+  <div style="text-align: right;font-size: 10px;opacity: .5;color: #fff;position: relative;z-index: 0;">
+    Powered by <a href="http://jekyllcn.com/" target="_blank" style="color: #fff;">Jekyll</a>
+    <p id="Year" style="font-size: 10px;"></p>
+    <script type="text/javascript">
+      // console.log(new Date().getFullYear())
+      document.getElementById('Year').innerHTML = 'By Xindot © ' + new Date().getFullYear()
+    </script>
   </div>
+
 </aside>
