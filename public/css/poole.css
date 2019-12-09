@@ -295,7 +295,8 @@ tbody tr:nth-child(odd) th {
   background-color: #f3f4f5;
   /*margin-left: -1rem;*/
   /*margin-right: -1rem;*/
-  text-align: justify;
+  text-align: left;
+  word-break: break-word;
   font-size: .9rem;
   border: solid 1px #cccccc;
   color: #666666;

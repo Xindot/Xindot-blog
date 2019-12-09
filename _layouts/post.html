@@ -11,7 +11,7 @@ layout: default
       {% capture tags_content_temp %}{{ tags_content }}<a href="{{ site.baseurl }}/tag/{{ post_tag }}/">{{ tag.name }}</a>{% if forloop.last == false %}<span>, </span>{% endif %}{% endcapture %}
       {% assign tags_content = tags_content_temp %}
     {% else %}
-      {% assign tags_content = '' %}
+      {% assign tags_content = post.tags[0] %}
     {% endif %}
   {% endfor %}
 {% else %}
@@ -49,15 +49,16 @@ layout: default
 
 <aside class="related articles">
   <h2 class="aside-title">相关文章</h2>
+  {% assign plusone = false %}
+  {% assign tag_name = page.tags[0] %}
+  {% if site.tags[tag_name] and site.tags[tag_name].size >1 %}
   <ul class="related-posts">
-    {% assign plusone = false %}
-    {% assign tag_name = page.tags[0] %}
-    {% for post in site.tags[tag_name] limit:4 %}
+    {% for post in site.tags[tag_name] limit:11 %}
       {% if post.url == page.url %}
         {% assign plusone = true %}
         {% continue %}
       {% endif %}
-      {% if forloop.index < 4 or plusone == true %}
+      {% if forloop.index < 10 or plusone == true %}
         <li>
           <h4>
             <a href="{{ post.url | prepend:site.baseurl }}">
@@ -69,6 +70,9 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
+  {% else %}
+  <p style="opacity: .5;padding: 5px;">博主太懒了，没有更多文章了</p>
+  {% endif %}
 </aside>
 
 {% if site.author.disqus %}
