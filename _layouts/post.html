@@ -36,7 +36,7 @@ layout: default
 </article>
 
 {% if site.author.about %}
-<aside class="author">
+<aside class="related author">
   <h2 class="aside-title">关于作者</h2>
 
   {% if site.author.photo %}
@@ -47,7 +47,7 @@ layout: default
 </aside>
 {% endif %}
 
-<aside class="related">
+<aside class="related articles">
   <h2 class="aside-title">相关文章</h2>
   <ul class="related-posts">
     {% assign plusone = false %}
@@ -103,11 +103,11 @@ layout: default
 </aside>
 {% endif %}
 
-{% if site.attach && site.attach.post_bottom %}
-<aside class="post-bottom">
+{% if site.attach.courses %}
+<aside class="related attach-courses">
   <h2 class="aside-title">推荐课程</h2>
   <ul style="padding-left: 0;list-style: none;">
-    {% for item in site.attach.post_bottom %}
+    {% for item in site.attach.courses %}
     <li>
       <h4>
         <a href="{{ item[1] }}" target="_blank">
@@ -121,3 +121,13 @@ layout: default
 </aside>
 {% endif %}
 
+{% if site.attach.books %}
+<aside class="related attach-books">
+  <h2 class="aside-title">推荐书籍</h2>
+  {% for item in site.attach.books %}
+  <a href="{{ item[1] }}" target="_blank" style="display: inline-block;width: 18%;min-width: 100px;margin: 0;">
+    <img src="{{ item[2] }}">
+  </a>
+  {% endfor %}
+</aside>
+{% endif %}

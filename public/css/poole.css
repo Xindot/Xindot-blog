@@ -384,9 +384,9 @@ tbody tr:nth-child(odd) th {
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  /*border-top: 1px solid #eee;*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #eee;
 }
 .related-posts {
   padding-left: 0;
@@ -410,8 +410,8 @@ tbody tr:nth-child(odd) th {
 }
 
 .aside-title {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
   opacity: .5;
 }

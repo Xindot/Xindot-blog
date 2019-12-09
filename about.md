@@ -11,7 +11,7 @@ title: About Me
 {% endcomment %}
 
 {% if site.author.photo %}
-  ![{{ site.author.name }}]({{site.author.photo}}){:.me .rotate-infinite}
+![{{ site.author.name }}]({{site.author.photo}}){:.me .rotate-infinite}
 {% endif %}
 
 {{ site.author.about }}
@@ -24,13 +24,22 @@ title: About Me
 
 ![Mou icon](http://img.6h5.cn/xindot-blog/hangzhou.jpg)
 
+---
+
 ###### 我的周边
 >*[个人简历-IT](/2015/05/20/xin-resume/)<br/>*
 >*[猫博客 · MaoMao日常](http://maomao.nuoluan.com){:target="_blank"}*
 
 ---
 
+###### 我的书架
+{% if site.attach.books %}
+{% for item in site.attach.books %}[![]({{item[2]}}){:height="120" width="120" alt="{{item[0]}}"}]({{item[1]}}){:target="_blank" style="display:inline-block;"}{% endfor %}
+{% endif %}
+
+---
+
 ###### 友情链接
 {% if site.attach.links %}
-  {% for item in site.attach.links %} [{{ item[0] }}]({{item[1]}}){:target="_blank"} {% endfor %}
+{% for item in site.attach.links %}[{{ item[0] }}]({{item[1]}}){:target="_blank" style="margin-right:.5rem;"}{% endfor %}
 {% endif %}
