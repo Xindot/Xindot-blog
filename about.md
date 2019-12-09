@@ -34,7 +34,7 @@ title: About Me
 
 ###### 我的书架
 {% if site.attach.books %}
-{% for item in site.attach.books %}[![]({{item[2]}}){:height="120" width="120" alt="{{item[0]}}"}]({{item[1]}}){:target="_blank" style="display:inline-block;"}{% endfor %}
+{% for item in site.attach.books %}[![]({{item[2]}}){:alt="{{item[0]}}"}]({{item[1]}}){:target="_blank" style="display:inline-block;width: 18%;min-width: 80px;margin: 0;"}{% endfor %}
 {% endif %}
 
 ---
