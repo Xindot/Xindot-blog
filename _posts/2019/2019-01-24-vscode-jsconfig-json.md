@@ -47,12 +47,12 @@ exclude属性（ *[glob模式](https://www.cnblogs.com/xdlysk/p/5183604.html){:t
 
 ```
 {
-    "compilerOptions": {
-        "target": "es6"
-    },
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
 ```
 
@@ -64,12 +64,12 @@ exclude属性（ *[glob模式](https://www.cnblogs.com/xdlysk/p/5183604.html){:t
 
 ```
 {
-    "compilerOptions": {
-        "target": "es6"
-    },
-    "include": [
-        "src/**/*"
-    ]
+  "compilerOptions": {
+    "target": "es6"
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
 ```
 

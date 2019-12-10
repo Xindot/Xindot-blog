@@ -11,7 +11,7 @@ layout: default
       {% capture tags_content_temp %}{{ tags_content }}<a href="{{ site.baseurl }}/tag/{{ post_tag }}/">{{ tag.name }}</a>{% if forloop.last == false %}<span>, </span>{% endif %}{% endcapture %}
       {% assign tags_content = tags_content_temp %}
     {% else %}
-      {% assign tags_content = '' %}
+      {% assign tags_content = post.tags[0] %}
     {% endif %}
   {% endfor %}
 {% else %}
@@ -36,7 +36,7 @@ layout: default
 </article>
 
 {% if site.author.about %}
-<aside class="author">
+<aside class="related author">
   <h2 class="aside-title">关于作者</h2>
 
   {% if site.author.photo %}
@@ -44,20 +44,26 @@ layout: default
   {% endif %}
 
   {{ site.author.about | markdownify }}
+
+  {% if site.author.weibo %}
+  <wb:follow-button uid="3129142911" type="red_4" width="100%" height="64"></wb:follow-button>
+  {% endif %}
+
 </aside>
 {% endif %}
 
-<aside class="related">
+<aside class="related articles">
   <h2 class="aside-title">相关文章</h2>
+  {% assign plusone = false %}
+  {% assign tag_name = page.tags[0] %}
+  {% if site.tags[tag_name] and site.tags[tag_name].size >1 %}
   <ul class="related-posts">
-    {% assign plusone = false %}
-    {% assign tag_name = page.tags[0] %}
-    {% for post in site.tags[tag_name] limit:4 %}
+    {% for post in site.tags[tag_name] limit:11 %}
       {% if post.url == page.url %}
         {% assign plusone = true %}
         {% continue %}
       {% endif %}
-      {% if forloop.index < 4 or plusone == true %}
+      {% if forloop.index < 10 or plusone == true %}
         <li>
           <h4>
             <a href="{{ post.url | prepend:site.baseurl }}">
@@ -69,6 +75,9 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
+  {% else %}
+  <p style="opacity: .5;padding: 5px;">博主太懒了，没有更多文章了</p>
+  {% endif %}
 </aside>
 
 {% if site.author.disqus %}
@@ -103,11 +112,11 @@ layout: default
 </aside>
 {% endif %}
 
-{% if site.attach && site.attach.post_bottom %}
-<aside class="post-bottom">
+{% if site.attach.courses %}
+<aside class="related attach-courses">
   <h2 class="aside-title">推荐课程</h2>
   <ul style="padding-left: 0;list-style: none;">
-    {% for item in site.attach.post_bottom %}
+    {% for item in site.attach.courses %}
     <li>
       <h4>
         <a href="{{ item[1] }}" target="_blank">
@@ -121,3 +130,13 @@ layout: default
 </aside>
 {% endif %}
 
+{% if site.attach.books %}
+<aside class="related attach-books">
+  <h2 class="aside-title">推荐书籍</h2>
+  {% for item in site.attach.books %}
+  <a href="{{ item[1] }}" target="_blank" style="display: inline-block;width: 18%;min-width: 80px;margin: 0;">
+    <img src="{{ item[2] }}">
+  </a>
+  {% endfor %}
+</aside>
+{% endif %}
