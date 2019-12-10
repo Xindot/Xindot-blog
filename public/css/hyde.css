@@ -329,6 +329,7 @@ a:focus::before {
 .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
+  border-right: solid 1px #f3f4f5;
 }
 
 @media (min-width: 48em) {

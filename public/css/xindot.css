@@ -38,3 +38,17 @@ em {
     transform: rotate(360deg);
   }
 }
+
+
+/* weibo */
+.WB_follow_ex .status_followed .follow_text, .WB_follow_ex .status_following .follow_text {
+  box-sizing: initial;
+}
+.WB_follow_ex .user_avatar_img {
+  margin: 0;
+  display: inline-block;
+}
+.WB_widget a:hover {
+  border-bottom: none!important;
+}
+

@@ -44,6 +44,11 @@ layout: default
   {% endif %}
 
   {{ site.author.about | markdownify }}
+
+  {% if site.author.weibo %}
+  <wb:follow-button uid="3129142911" type="red_4" width="100%" height="64"></wb:follow-button>
+  {% endif %}
+
 </aside>
 {% endif %}
 
