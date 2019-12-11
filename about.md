@@ -22,12 +22,13 @@ title: About Me
 >*[@豆瓣](https://www.douban.com/people/Durling/){:target="_blank"}*
 >*[@SF](https://segmentfault.com/u/durling){:target="_blank"}*
 
-![Mou icon](http://img.6h5.cn/xindot-blog/hangzhou.jpg)
+@杭州
+![Mou icon](http://img.6h5.cn/xindot-blog/hangzhou.jpg){:style="width:200px;"}
 
 ---
 
 ###### 我的周边
->*[个人简历-IT](/2015/05/20/xin-resume/)<br/>*
+>*[个人简历 · IT](http://xiexin.xin/){:target="_blank"}<br/>*
 >*[猫博客 · MaoMao日常](http://maomao.nuoluan.com){:target="_blank"}*
 
 ---
