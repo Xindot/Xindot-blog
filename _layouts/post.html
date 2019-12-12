@@ -140,3 +140,43 @@ layout: default
   {% endfor %}
 </aside>
 {% endif %}
+
+
+{% if site.blog_msg.host %}
+<script src="https://s1.nianran.net/cdn/vue/2.6.10/vue.min.js"></script>
+<script src="https://s1.nianran.net/cdn/axios/0.19.0/axios.min.js"></script>
+<aside class="comments">
+  <h2 class="aside-title">留言</h2>
+  <div id="blog_msg">
+    <div v-for="(item,index) in list" class="list-one">
+      <span v-html="item.name"></span>
+      <span v-html="item.content"></span>
+    </div>
+    <div v-if="list.length==0">暂无留言</div>
+  </div>
+  <script type="text/javascript">
+    var host = '{{site.blog_msg.host}}'
+    var path = '{{post.url}}'
+    // path = encodeURIComponent(path)
+    console.log(host,path)
+    axios.get(host+'blogMsg/list?link='+path).then(function (res) {
+      console.log(res);
+      if(res.data.code == 200){
+        var vm = new Vue({
+          el: '#blog_msg',
+          data: {
+            list: res.data.result || []
+          },
+          created: function () {
+            // `this` 指向 vm 实例
+            console.log('list=>' + this.list.length)
+          }
+        })
+      }
+    }).catch(function (error) {
+      console.log(error);
+    });
+  </script>
+</aside>
+{% endif %}
+
