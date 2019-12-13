@@ -105,6 +105,7 @@
         var f = JSON.parse(window.localStorage.getItem('blogMsg.submitForm') || '{}')
         this.submitForm.name = f.name
         this.submitForm.email = f.email
+        this.createdLogs(f)
       },
       mounted: function(){
         this.getList()
@@ -134,7 +135,7 @@
         zanIt:function(item){
           if(item.id){
             var _this = this
-            axios.post(host+'/blogMsg/zan/'+item.id).then(function (res) {
+            axios.post(host+'blogMsg/zan/'+item.id).then(function (res) {
               // console.log(res);
               if(res.data.code == 200){
                 _this.getList()
@@ -169,10 +170,10 @@
           if(!checkEmail(f.email)){this.vtips.email='邮箱地址格式不正确';return;}
           if(!f.content){this.vtips.content=`请填写${title}内容`;return;}
           window.localStorage.setItem('blogMsg.submitForm',JSON.stringify(f))
-          const msgId = this.replyTarget.id || ''
+          var msgId = this.replyTarget.id || ''
           var _this = this
           if(msgId){
-            axios.post(host+'/blogMsg/reply/'+msgId,f).then(function (res) {
+            axios.post(host+'blogMsg/reply/'+msgId,f).then(function (res) {
               console.log(res);
               if(res.data.code == 200){
                 alert('您的回复已经提交成功')
@@ -186,7 +187,7 @@
               alert(error)
             });
           }else{
-            axios.post(host+'/blogMsg/create',f).then(function (res) {
+            axios.post(host+'blogMsg/create',f).then(function (res) {
               console.log(res);
               if(res.data.code == 200){
                 alert(`您的${title}已经提交成功`)
@@ -200,6 +201,22 @@
               alert(error)
             });
           }
+        },
+        createdLogs:function(f){
+          var logf = {
+            title: path,
+            user: (f.name||'')+(f.email||'')||'0',
+            content: JSON.stringify({
+              url: window.location.href,
+              UA: window.navigator.userAgent,
+            }),
+            category: 'xinBlog',
+          };
+          axios.post(host+'logs/create',logf).then(function (res) {
+            console.log(res.data);
+          }).catch(function (error) {
+            console.log(error);
+          });
         }
       }
     })
