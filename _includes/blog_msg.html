@@ -1,0 +1,206 @@
+{% if site.blog_msg.host %}
+<style type="text/css">
+#blog_msg .submit-form {padding: 10px;border: 1px solid #ddd;font-size: 15px;}
+#blog_msg .submit-form p input {width: 50%;height: 35px;margin: 0 5px 5px 0;padding: 4px;border: 1px solid #ddd;background-color: #fff;font-size: 14px;}
+#blog_msg .submit-form p textarea {width: 70%;max-width: 100%;margin: 0 5px 5px 0;min-width: 50%;height: 100px;min-height: 70px;max-height: 200px;overflow: auto;padding: 4px;border: 1px solid #ddd;background-color: #fff;resize: none;vertical-align: middle;font-size: 14px;}
+#blog_msg .submit-form p button {height: 40px;width: 120px;font-size: 15px;margin-bottom: 20px;cursor: pointer;border: 1px solid #ddd;background-color: rgb(236, 236, 236);}
+#blog_msg .submit-form p span.star {color: #777;font-size: 13px;}
+#blog_msg .submit-form p.red {color: red;font-size: 12px;margin-top: -15px;}
+#blog_msg .list-one {padding: 10px;border: 1px solid #ddd;margin-bottom: 20px;font-size: 13px;}
+</style>
+<script src="https://s1.nianran.net/cdn/vue/2.6.10/vue.min.js"></script>
+<script src="https://s1.nianran.net/cdn/axios/0.19.0/axios.min.js"></script>
+<aside class="comments">
+  <div id="blog_msg">
+    <h2 class="aside-title" @click="replyTarget={}">
+    	<span v-html="title+'列表'"></span>
+      <span style="font-size: 20px;">(<span v-html="list.length||0"></span>条)</span>
+    </h2>
+    <div v-for="(item,index) in list" class="list-one">
+      <div style="position: relative;">
+        <img class="jsAvatar" height="50" width="50" src="https://gravatar.loli.net/avatar/5fd26520ce413785c6445a57e3c79d8c?s=64" style="display: inline-block;vertical-align: middle;margin: 0;position: absolute;">
+        <div style="display: inline-block;vertical-align: middle;left: 0;padding-left: 60px;width: 100%;">
+          <p style="margin: 0;">
+            <span v-html="item.name" style="font-weight: 600;text-decoration: underline;"></span>
+            <span>评论:</span>
+            <span v-html="item.created_at" style="color: #999;font-size: 12px;" class="float-right clearfix"></span>
+          </p>
+          <p style="margin: 0;color: #999;">
+            <span v-html="item.content" style="color: #333;"></span> 
+          </p>
+          <div style="margin: 15px 0 5px 0;">
+            <span style="margin-right: 15px;cursor: pointer;border: solid 1px #ddd;padding: 2px 5px;color: #34538b;" @click="zanIt(item)">赞
+              <span v-html="item.zanIps || 0"></span>
+            </span>
+            <span style="cursor: pointer;border: solid 1px #ddd;padding: 2px 5px;color: #34538b;" @click="replyIt(item)">回复
+              <span v-html="item.reply && item.reply.length || 0"></span>
+            </span>
+          </div>
+          <div v-if="item.reply && replyTarget.id==item.id" style="margin-top: 20px;">
+            <div v-for="(iten,indey) in item.reply" class="list-one">
+              <img class="jsAvatar" height="50" width="50" src="https://gravatar.loli.net/avatar/5fd26520ce413785c6445a57e3c79d8c?s=64" style="display: inline-block;vertical-align: middle;margin: 0;position: absolute;">
+              <div style="display: inline-block;vertical-align: middle;left: 0;padding-left: 60px;width: 100%;">
+                <p style="margin: 0;">
+                  <span v-html="iten.name" style="font-weight: 600;text-decoration: underline;"></span>
+                  <span>回复:</span>
+                  <span v-html="iten.created_at" style="color: #999;font-size: 12px;" class="float-right clearfix"></span>
+                </p>
+                <p style="margin: 0;color: #999;">
+                  <span v-html="iten.content" style="color: #333;"></span> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-if="list.length==0" style="color: #333;">
+    	<span v-html="'暂无'+title"></span>
+    </div>
+    <div class="submit-form" style="margin-top: 20px;">
+      <p v-if="replyTarget.id"> 
+        <span>回复</span>
+        <span v-html="replyTarget.name" style="font-weight: 600;text-decoration: underline;"></span>
+        <span style="font-family: sans-serif;font-size: 20px;vertical-align: middle;">“</span>
+        <span v-html="replyTarget.content" style="color: #333;max-width: 200px;display: inline-block;vertical-align: middle;" class="ellipsis"></span> 
+        <span style="font-family: sans-serif;font-size: 20px;vertical-align: middle;">”</span>:
+      </p>
+      <p v-else style="color: #333;font-size: 18px;">
+	    	<span v-html="'发表'+title"></span>
+      </p>
+      <p><input v-model="submitForm.name" maxlength="20" placeholder="名称"><span class="star">(必填)</span><span @click="getRandomName" style="padding: 2px 5px;display: inline-block;cursor: pointer;border: 1px solid #673AB7;background-color: #673AB7;margin-left: 10px;color: #fff;font-size: 14px;border-radius: 5px;">获取花名</span></p>
+      <p v-if="vtips.name" v-html="vtips.name" class="red"></p>
+      <p><input v-model="submitForm.email" maxlength="50" placeholder="邮箱地址(不会被公开)"><span class="star">(必填)</span></p>
+      <p v-if="vtips.email" v-html="vtips.email" class="red"></p>
+      <p><textarea v-model="submitForm.content" maxlength="140" placeholder="内容(140字以内)"></textarea><span class="star">(必填)</span></p>
+      <p v-if="vtips.content" v-html="vtips.content" class="red"></p>
+      <p><button @click="submitMsg">提交</button></p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var regExp = {
+      email: /^([a-zA-Z0-9]+[-_\.]?)+@[a-zA-Z0-9]+\.[a-z]+$/
+    }
+    // 验证邮箱格式
+    var checkEmail = function(str) {
+      return regExp.email.test(str)
+    }
+    var host = '{{site.blog_msg.host}}'
+    var path = '{{post.url}}' || '{{page.url}}'
+    var title = '{{post.url}}' ? '评论' : '留言'
+    // path = encodeURIComponent(path)
+    console.log(host,path,title)
+    var vm = new Vue({
+      el: '#blog_msg',
+      data: {
+      	title,
+        list: [],
+        submitForm: {name: '',email: '',content: '',path,},
+        vtips: {name: '',email: '',content: ''},
+        replyTarget: {}
+      },
+      created: function () {
+        var f = JSON.parse(window.localStorage.getItem('blogMsg.submitForm') || '{}')
+        this.submitForm.name = f.name
+        this.submitForm.email = f.email
+      },
+      mounted: function(){
+        this.getList()
+        if(!this.submitForm.name){
+          this.getRandomName()
+        }
+      },
+      methods: {
+        getList: function(){
+          var _this = this
+          axios.get(host+'blogMsg/list?path='+path).then(function (res) {
+            // console.log(res);
+            if(res.data.code == 200){
+              _this.list = res.data.result || []
+            }
+          }).catch(function (error) {
+            console.log(error);
+          });
+        },
+        replyIt:function(item){
+          if(this.replyTarget.id){
+            this.replyTarget = {}
+          }else{
+            this.replyTarget = item
+          }
+        },
+        zanIt:function(item){
+          if(item.id){
+            var _this = this
+            axios.post(host+'/blogMsg/zan/'+item.id).then(function (res) {
+              // console.log(res);
+              if(res.data.code == 200){
+                _this.getList()
+              }else{
+                alert(res.data.msg)
+              }
+            }).catch(function (error) {
+              console.log(error);
+              alert(error)
+            });
+          }
+        },
+        getRandomName: function(){
+          var _this = this
+          axios.get(host+'blogMsg/randomName').then(function (res) {
+            // console.log(res);
+            if(res.data.code == 200 && res.data.result){
+              _this.submitForm.name = res.data.result   
+            }else{
+              alert('获取花名服务异常')
+            }
+          }).catch(function (error) {
+            console.log(error);
+          });
+        },
+        submitMsg: function() {
+          var f = this.submitForm
+          console.log(f)
+          this.vtips = {name: '',email: '',content: ''}
+          if(!f.name){this.vtips.name='请填写名称';return;}
+          if(!f.email){this.vtips.email='请填写邮箱地址';return;}
+          if(!checkEmail(f.email)){this.vtips.email='邮箱地址格式不正确';return;}
+          if(!f.content){this.vtips.content=`请填写${title}内容`;return;}
+          window.localStorage.setItem('blogMsg.submitForm',JSON.stringify(f))
+          const msgId = this.replyTarget.id || ''
+          var _this = this
+          if(msgId){
+            axios.post(host+'/blogMsg/reply/'+msgId,f).then(function (res) {
+              console.log(res);
+              if(res.data.code == 200){
+                alert('您的回复已经提交成功')
+                _this.submitForm.content = ''
+                _this.getList()
+              }else{
+                alert(res.data.msg)
+              }
+            }).catch(function (error) {
+              console.log(error);
+              alert(error)
+            });
+          }else{
+            axios.post(host+'/blogMsg/create',f).then(function (res) {
+              console.log(res);
+              if(res.data.code == 200){
+                alert(`您的${title}已经提交成功`)
+                _this.submitForm.content = ''
+                _this.getList()
+              }else{
+                alert(res.data.msg)
+              }
+            }).catch(function (error) {
+              console.log(error);
+              alert(error)
+            });
+          }
+        }
+      }
+    })
+  </script>
+</aside>
+{% endif %}

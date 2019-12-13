@@ -387,7 +387,7 @@ tbody tr:nth-child(odd) th {
 .related {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-top: 1px solid #eee;
+  /*border-top: 1px solid #eee;*/
 }
 .related-posts {
   padding-left: 0;
