@@ -80,10 +80,10 @@ em {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  display: -webkit-box;
+  /*display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 
 input,
