@@ -181,7 +181,7 @@ layout: default
               <span v-html="item.reply && item.reply.length || 0"></span>
             </span>
           </div>
-          <div v-if="item.reply && replyTarget.id" style="margin-top: 20px;">
+          <div v-if="item.reply && replyTarget.id==item.id" style="margin-top: 20px;">
             <div v-for="(iten,indey) in item.reply" class="list-one">
               <img class="jsAvatar" height="50" width="50" src="https://gravatar.loli.net/avatar/5fd26520ce413785c6445a57e3c79d8c?s=64" style="display: inline-block;vertical-align: middle;margin: 0;position: absolute;">
               <div style="display: inline-block;vertical-align: middle;left: 0;padding-left: 60px;width: 100%;">
@@ -209,7 +209,7 @@ layout: default
         <span style="font-family: sans-serif;font-size: 20px;vertical-align: middle;">”</span>:
       </p>
       <p v-else style="color: #333;font-size: 18px;">发表评论</p>
-      <p><input v-model="submitForm.name" maxlength="20" placeholder="名称"><span class="star">(必填)</span></p>
+      <p><input v-model="submitForm.name" maxlength="20" placeholder="名称"><span class="star">(必填)</span><span @click="getRandomName" style="padding: 2px 5px;display: inline-block;cursor: pointer;border: 1px solid #673AB7;background-color: #673AB7;margin-left: 10px;color: #fff;font-size: 14px;border-radius: 5px;">获取花名</span></p>
       <p v-if="vtips.name" v-html="vtips.name" class="red"></p>
       <p><input v-model="submitForm.email" maxlength="50" placeholder="邮箱地址(不会被公开)"><span class="star">(必填)</span></p>
       <p v-if="vtips.email" v-html="vtips.email" class="red"></p>
@@ -229,7 +229,7 @@ layout: default
     var host = '{{site.blog_msg.host}}'
     var path = '{{post.url}}'
     // path = encodeURIComponent(path)
-    console.log(host,path)
+    // console.log(host,path)
     var vm = new Vue({
       el: '#blog_msg',
       data: {
@@ -245,12 +245,15 @@ layout: default
       },
       mounted: function(){
         this.getList()
+        if(!this.submitForm.name){
+          this.getRandomName()
+        }
       },
       methods: {
         getList: function(){
           var _this = this
           axios.get(host+'blogMsg/list?path='+path).then(function (res) {
-            console.log(res);
+            // console.log(res);
             if(res.data.code == 200){
               _this.list = res.data.result || []
             }
@@ -280,6 +283,19 @@ layout: default
               alert(error)
             });
           }
+        },
+        getRandomName: function(){
+          var _this = this
+          axios.get(host+'blogMsg/randomName').then(function (res) {
+            // console.log(res);
+            if(res.data.code == 200 && res.data.result){
+              _this.submitForm.name = res.data.result   
+            }else{
+              alert('获取花名服务异常')
+            }
+          }).catch(function (error) {
+            console.log(error);
+          });
         },
         submitMsg: function() {
           var f = this.submitForm
