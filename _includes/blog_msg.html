@@ -86,10 +86,12 @@
       return regExp.email.test(str)
     }
     var host = '{{site.blog_msg.host}}'
-    var path = '{{post.url}}' || '{{page.url}}'
-    var title = '{{post.url}}' ? '评论' : '留言'
+    var postUrl = '{{post.url}}'
+    var pageUrl = '{{page.url}}'
+    var title = postUrl ? '评论' : '留言'
+    var path = postUrl || pageUrl
     // path = encodeURIComponent(path)
-    console.log(host,path,title)
+    // console.log(host,postUrl,pageUrl,path,title)
     var vm = new Vue({
       el: '#blog_msg',
       data: {

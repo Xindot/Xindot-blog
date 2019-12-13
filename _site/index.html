@@ -731,10 +731,12 @@
       return regExp.email.test(str)
     }
     var host = 'https://www.nianran.net/SunApi/'
-    var path = '' || '/'
-    var title = '' ? '评论' : '留言'
+    var postUrl = ''
+    var pageUrl = '/'
+    var title = postUrl ? '评论' : '留言'
+    var path = postUrl || pageUrl
     // path = encodeURIComponent(path)
-    console.log(host,path,title)
+    // console.log(host,postUrl,pageUrl,path,title)
     var vm = new Vue({
       el: '#blog_msg',
       data: {
