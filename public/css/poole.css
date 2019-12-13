@@ -194,13 +194,13 @@ pre code {
 
 .highlighter-rouge {
   border-radius: 5px;
-  /*margin: 0 2px;*/
-  /*color: #c7254e;*/
-  /*background-color: #f2f2f2;*/
-  /*padding: 2px 4px;*/
+  margin: 0 2px;
+  color: #c7254e;
+  background-color: #f2f2f2;
+  padding: 2px 4px;
   border: none;
   vertical-align: middle;
-  /*white-space: pre-wrap;*/
+  white-space: pre-wrap;
 }
 
 /* <del>Pygments</del> Rouge via Jekyll */
