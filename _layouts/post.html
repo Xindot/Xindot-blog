@@ -249,7 +249,7 @@ layout: default
       methods: {
         getList: function(){
           var _this = this
-          axios.get(host+'blogMsg/list?link='+path).then(function (res) {
+          axios.get(host+'blogMsg/list?path='+path).then(function (res) {
             console.log(res);
             if(res.data.code == 200){
               _this.list = res.data.result || []
