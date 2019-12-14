@@ -13,7 +13,7 @@ var orginList = [
   'http://127.0.0.1:4000', 'https://xindot.com', 'https://www.xindot.com'
 ]
 app.all("*", function (req, res, next) {
-  if (orginList.includes(req.headers.origin.toLowerCase())) {
+  if (orginList.includes(req.headers.origin)) {
     //设置允许跨域的域名，*代表允许任意域名跨域
     res.header("Access-Control-Allow-Origin", req.headers.origin);
   }
@@ -35,7 +35,7 @@ var orginList = [
   'http://127.0.0.1:4000', 'https://xindot.com', 'https://www.xindot.com'
 ]
 router.all("/*", function (req, res, next) {
-  if (orginList.includes(req.headers.origin.toLowerCase())) {
+  if (orginList.includes(req.headers.origin)) {
     //设置允许跨域的域名，*代表允许任意域名跨域
     res.header("Access-Control-Allow-Origin", req.headers.origin);
   }
