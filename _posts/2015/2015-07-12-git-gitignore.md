@@ -9,7 +9,7 @@ node项目根目录添加文件.gitignore
 
 	.DS_Store
 	.project
-	public/avatar/ .log
+	assets/avatar/ .log
 	nohup.out
 	npm-debug.log
 

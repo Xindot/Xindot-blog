@@ -4,12 +4,10 @@ title: Git常用终端命令
 tags: [git]
 ---
 
-写在前面
-
->Git想必大家都熟悉了，由于现在Git的管理工具用的的确很方便，估计大家都用Git管理工具了，所以真正能够熟练用终端敲出常用的Git命令，想必没有多少人（当然也包括我）。<br><br>
+>**写在前面：**<br/><br/>Git想必大家都熟悉了，由于现在Git的管理工具用的的确很方便，估计大家都用Git管理工具了，所以真正能够熟练用终端敲出常用的Git命令，想必没有多少人（当然也包括我）。<br/><br/>
 我用Git比较无规律，都是混合使用的：终端Git命令（会一些常用的） + Xcode自带Git管理工具 + SourceTree。具体会使用哪种方式，完全看心情和操作的熟练度。
-最近闲来无事（等后台哥们的接口），索性看了下常用的Git终端命令，顺便做了下笔记与大家分享，当然也方便了以后自己的查阅。<br><br>
-本文Git常用命令知识点基本来自“廖雪峰 ”前辈的[Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000){:target="_blank"}。若对Git没有些许的了解，只看常用命令可能对大家的帮助不是太大，所以建议大家有空的时候花点时间去看下“廖雪峰 ”前辈的[Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000){:target="_blank"}，通熟易懂，相信会有所收获。<br><br>
+最近闲来无事（等后台哥们的接口），索性看了下常用的Git终端命令，顺便做了下笔记与大家分享，当然也方便了以后自己的查阅。<br/><br/>
+本文Git常用命令知识点基本来自“廖雪峰 ”前辈的*[Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000){:target="_blank"}*。若对Git没有些许的了解，只看常用命令可能对大家的帮助不是太大，所以建议大家有空的时候花点时间去看下“廖雪峰 ”前辈的*[Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000){:target="_blank"}*，通熟易懂，相信会有所收获。<br/><br/>
 最后，若文章有什么错误的地方，望评论指出。
 
 ## git init
@@ -172,57 +170,55 @@ git log --graph --pretty=oneline --abbrev-commit
 
 >查看所有分支（会显示本地分支和远程分支）
 
-git fetch
+## git fetch
 
 >个人粗浅的理解为将远程所有的分支信息拉取到本地
 
-git checkout -b local-branchname origin/remote_branchname
+## git checkout -b local-branchname origin/remote_branchname
 
 >将远程分支映射到本地命名为local-branchname 的一分支（本地分支名称最好和远程分支名称一致）
 
-git branch --set-upstream dev origin/dev
+## git branch --set-upstream dev origin/dev
 
 >指定本地dev分支与远程origin/dev分支的链接
 
-git tag
+## git tag
 
 >查看所有标签
 
-git tag 标签名称
+## git tag 标签名称
 
 >打标签：默认标签是打在最新提交的commit上的
 
-git tag 标签名称 commit的版本号
+## git tag 标签名称 commit的版本号
 
 >例如：git tag v0.9 6224937
 在制定的提交位置上打上标签
 
-git show 标签名称
+## git show 标签名称
 
 >查看标签信息
 
-git tag -a 我是标签 -m "添加了标签" 3628164
+## git tag -a 我是标签 -m "添加了标签" 3628164
 
 >例如：git tag -a v0.1 -m "version 0.1 released" 3628164
 创建带有说明的标签，用-a指定标签名，-m指定说明文字。经测试 -a可以去掉，也就可以写成
 git tag 我是标签 -m "添加了标签" 3628164
 
-git tag -d v0.1
+## git tag -d v0.1
 
 >删除一个叫做 v0.1的本地标签
 
-git push origin :refs/tags/<tagname>
+## git push origin :refs/tags/<tagname>
 
 >删除一个远程标签
 
-git push origin 标签名称
+## git push origin 标签名称
 
 >推送某个标签到远程
 
-git push origin --tags
+## git push origin --tags
 
 >一次性推送全部尚未推送到远程的本地标签
 
-	文／chenfanfang（简书作者）
-	原文链接：http://www.jianshu.com/p/87ab8acf4b87
-	著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
+[原文](http://www.jianshu.com/p/87ab8acf4b87){:target="_blank"}

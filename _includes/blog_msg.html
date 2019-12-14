@@ -13,7 +13,7 @@
 <aside class="comments">
   <div id="blog_msg">
     <h2 class="aside-title" @click="replyTarget={}">
-    	<span v-html="title+'列表'"></span>
+    	<span v-html="typeStr"></span>列表
       <span style="font-size: 20px;">(<span v-html="list.length||0"></span>条)</span>
     </h2>
     <div v-for="(item,index) in list" class="list-one">
@@ -22,7 +22,7 @@
         <div style="display: inline-block;vertical-align: middle;left: 0;padding-left: 60px;width: 100%;">
           <p style="margin: 0;">
             <span v-html="item.name" style="font-weight: 600;text-decoration: underline;"></span>
-            <span>评论:</span>
+            <span v-html="typeStr"></span>:
             <span v-html="item.created_at" style="color: #999;font-size: 12px;" class="float-right clearfix"></span>
           </p>
           <p style="margin: 0;color: #999;">
@@ -55,7 +55,7 @@
       </div>
     </div>
     <div v-if="list.length==0" style="color: #333;">
-    	<span v-html="'暂无'+title"></span>
+    	暂无<span v-html="typeStr"></span>
     </div>
     <div class="submit-form" style="margin-top: 20px;">
       <p v-if="replyTarget.id"> 
@@ -66,7 +66,7 @@
         <span style="font-family: sans-serif;font-size: 20px;vertical-align: middle;">”</span>:
       </p>
       <p v-else style="color: #333;font-size: 18px;">
-	    	<span v-html="'发表'+title"></span>
+	    	发表<span v-html="typeStr"></span>
       </p>
       <p><input v-model="submitForm.name" maxlength="20" placeholder="名称"><span class="star">(必填)</span><span @click="getRandomName" style="padding: 2px 5px;display: inline-block;cursor: pointer;border: 1px solid #673AB7;background-color: #673AB7;margin-left: 10px;color: #fff;font-size: 14px;border-radius: 5px;">获取花名</span></p>
       <p v-if="vtips.name" v-html="vtips.name" class="red"></p>
@@ -88,14 +88,14 @@
     var host = '{{site.blog_msg.host}}'
     var postUrl = '{{post.url}}'
     var pageUrl = '{{page.url}}'
-    var title = postUrl ? '评论' : '留言'
+    var typeStr = postUrl ? '评论' : '留言'
     var path = postUrl || pageUrl
     // path = encodeURIComponent(path)
-    // console.log(host,postUrl,pageUrl,path,title)
+    // console.log(host,postUrl,pageUrl,path,typeStr)
     var vm = new Vue({
       el: '#blog_msg',
       data: {
-      	title,
+      	typeStr,
         list: [],
         submitForm: {name: '',email: '',content: '',path,},
         vtips: {name: '',email: '',content: ''},
@@ -168,7 +168,7 @@
           if(!f.name){this.vtips.name='请填写名称';return;}
           if(!f.email){this.vtips.email='请填写邮箱地址';return;}
           if(!checkEmail(f.email)){this.vtips.email='邮箱地址格式不正确';return;}
-          if(!f.content){this.vtips.content=`请填写${title}内容`;return;}
+          if(!f.content){this.vtips.content=`请填写${typeStr}内容`;return;}
           window.localStorage.setItem('blogMsg.submitForm',JSON.stringify(f))
           var msgId = this.replyTarget.id || ''
           var _this = this
@@ -190,7 +190,7 @@
             axios.post(host+'blogMsg/create',f).then(function (res) {
               console.log(res);
               if(res.data.code == 200){
-                alert(`您的${title}已经提交成功`)
+                alert(`您的${typeStr}已经提交成功`)
                 _this.submitForm.content = ''
                 _this.getList()
               }else{

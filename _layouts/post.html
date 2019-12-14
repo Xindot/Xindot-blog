@@ -119,11 +119,11 @@ layout: default
 {% endif %}
 
 
-{% if site.attach.courses %}
-<aside class="related attach-courses">
+{% if site.data.courses %}
+<aside class="related data-courses">
   <h2 class="aside-title">推荐课程</h2>
   <ul style="padding-left: 0;list-style: none;">
-    {% for item in site.attach.courses %}
+    {% for item in site.data.courses %}
     <li>
       <h4>
         <a href="{{ item[1] }}" target="_blank">
@@ -138,11 +138,11 @@ layout: default
 {% endif %}
 
 
-{% if site.attach.books %}
-<aside class="related attach-books">
+{% if site.data.books %}
+<aside class="related data-books">
   <h2 class="aside-title">推荐书籍</h2>
   <div style="white-space: nowrap;overflow-x: auto;">
-    {% for item in site.attach.books %}
+    {% for item in site.data.books %}
     <a href="{{ item[1] }}" target="_blank" style="display: inline-block;width: 18%;min-width: 80px;margin: 0;">
       <img src="{{ item[2] }}">
     </a>
@@ -150,4 +150,5 @@ layout: default
   </div>
 </aside>
 {% endif %}
+
 

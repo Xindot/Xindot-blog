@@ -34,13 +34,13 @@ title: About Me
 ---
 
 ###### 我的书架
-{% if site.attach.books %}
-{% for item in site.attach.books %}[![]({{item[2]}}){:alt="{{item[0]}}"}]({{item[1]}}){:target="_blank" style="display:inline-block;width: 18%;min-width: 80px;margin: 0;"}{% endfor %}
+{% if site.data.books %}
+*{% for item in site.data.books %}[![]({{item[2]}}){:alt="{{item[0]}}"}]({{item[1]}}){:target="_blank" style="display:inline-block;width: 18%;min-width: 80px;margin: 0;"}{% endfor %}*
 {% endif %}
-*
+
 ---
 
 ###### 友情链接
-{% if site.attach.links %}
-{% for item in site.attach.links %}[{{ item[0] }}]({{item[1]}}){:target="_blank" style="margin-right:.5rem;"}{% endfor %}
+{% if site.data.flinks %}
+{% for item in site.data.flinks %}[{{ item[0] }}]({{item[1]}}){:target="_blank" style="margin-right:.5rem;"}{% endfor %}
 {% endif %}

@@ -75,3 +75,22 @@ mysql:
     MySQL 是最流行的关系型数据库管理系统，在 WEB 应用方面 MySQL 是最好的 RDBMS(Relational Database Management System：关系数据库管理系统)应用软件之一。
     <a href="https://www.runoob.com/mysql/mysql-tutorial.html" target="_blank">教程</a>
 
+nginx:
+  name: NGINX
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
+  color: '#e13300'
+  description: >
+    Nginx (engine x) 是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP/POP3/SMTP服务。Nginx是由伊戈尔·赛索耶夫为俄罗斯访问量第二的Rambler.ru站点（俄文：Рамблер）开发的，第一个公开版本0.1.0发布于2004年10月4日。
+    其将源代码以类BSD许可证的形式发布，因它的稳定性、丰富的功能集、示例配置文件和低系统资源的消耗而闻名。2011年6月1日，nginx 1.0.4发布。
+    <a href="http://www.nginx.cn/doc/" target="_blank">中文文档</a>
+
+jekyll:
+  name: Jekyll
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
+  color: '#673AB7'
+  description: >
+    jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。
+    但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。
+    <a href="http://jekyllcn.com/docs/home/" target="_blank">文档</a>
+
+    
