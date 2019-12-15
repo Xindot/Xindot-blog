@@ -31,3 +31,4 @@ tags: [jekyll]
 
 ###### 补充我的部署： 在`_layouts/post.html`中添加代码块
 
+![20191215183506](http://img.6h5.cn/xindot-blog/paste/20191215183506.png)

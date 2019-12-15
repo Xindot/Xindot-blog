@@ -1,0 +1,13 @@
+{
+    "pasteImageToQiniu.access_key": "UtR9-061L8qFst2lvhiBR9Tc9E_u3sprXyOnTbSS",
+    "pasteImageToQiniu.domain": "img.6h5.cn",
+    "pasteImageToQiniu.bucket": "d-6h5",
+    "pasteImageToQiniu.remotePath": "${mdFileName}-${dateTime}",
+    "pasteImageToQiniu.secret_key": "huy_QYClFu6AEjVqc24cwX_98UjtWjKczjIAcjpF",
+    "qiniu.access_key": "UtR9-061L8qFst2lvhiBR9Tc9E_u3sprXyOnTbSS",
+    "qiniu.domain": "http://img.6h5.cn",
+    "qiniu.bucket": "d-6h5",
+    "qiniu.secret_key": "huy_QYClFu6AEjVqc24cwX_98UjtWjKczjIAcjpF",
+    "qiniu.localPath": "",
+    "qiniu.remotePath": "xindot-blog/paste/${fileName}"
+}
