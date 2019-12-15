@@ -1,7 +1,7 @@
 {
-    "qiniu.access_key": "***",
+    "qiniu.access_key": "UtR9-061L8qFst2lvhiBR9Tc9E_u3sprXyOnTbSS",
     "qiniu.domain": "http://img.6h5.cn",
     "qiniu.bucket": "d-6h5",
-    "qiniu.secret_key": "***",
+    "qiniu.secret_key": "huy_QYClFu6AEjVqc24cwX_98UjtWjKczjIAcjpF",
     "qiniu.remotePath": "xindot-blog/paste/${fileName}"
 }
