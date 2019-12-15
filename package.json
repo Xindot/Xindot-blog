@@ -1,0 +1,18 @@
+{
+    "name": "xindot-blog",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "jekyll server",
+        "build": "jekyll build",
+        "pubNRP": "rsync -avz --delete ./* root@nianran.net:/home/fe_group/xindot_blog"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "eslintConfig": {},
+    "postcss": {},
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}
