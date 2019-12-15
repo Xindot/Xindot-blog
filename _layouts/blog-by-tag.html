@@ -14,6 +14,8 @@ layout: default
 {% endif %}
 <hr/>
 
+{{ content }}
+
 {% if site.tags[page.tag] %}
   {% for post in site.tags[page.tag] %}
     {% assign currentdate = post.date | date: "%Y" %}
