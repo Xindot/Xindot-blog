@@ -32,3 +32,6 @@ tags: [jekyll]
 ###### 补充我的部署： 在`_layouts/post.html`中添加代码块
 
 ![20191215183506](http://img.6h5.cn/xindot-blog/paste/20191215183506.png)
+
+效果如下
+![博客中添加微博关注按钮](http://img.6h5.cn/xindot-blog/paste/20191215190800.png)

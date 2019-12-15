@@ -9,7 +9,7 @@ jekyll server
 jekyll build
 ```
 
-## 黏贴图片上传七牛配置：
+## 粘贴图片上传七牛配置：
 - 1.安装插件Markdown
 - 2.在settings.json中新增
 ```
