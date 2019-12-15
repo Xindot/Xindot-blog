@@ -674,48 +674,51 @@
 #blog_msg .submit-form p textarea {width: 70%;max-width: 100%;margin: 0 5px 5px 0;min-width: 50%;height: 100px;min-height: 70px;max-height: 200px;overflow: auto;padding: 4px;border: 1px solid #ddd;background-color: #fff;resize: none;vertical-align: middle;font-size: 14px;}
 #blog_msg .submit-form p button {height: 40px;width: 120px;font-size: 15px;margin-bottom: 20px;cursor: pointer;border: 1px solid #ddd;background-color: rgb(236, 236, 236);}
 #blog_msg .submit-form p span.star {color: #777;font-size: 13px;}
+#blog_msg .submit-form p span.r-name {padding:2px 5px;display: inline-block;cursor: pointer;border:1px solid #673AB7;background-color: #673AB7;margin-left: 10px;color: #fff;font-size: 14px;border-radius: 5px;}
 #blog_msg .submit-form p.red {color: red;font-size: 12px;margin-top: -15px;}
-#blog_msg .list-one {padding: 10px;border: 1px solid #ddd;margin-bottom: 20px;font-size: 13px;}
+#blog_msg .list-one > div {padding: 10px;border: 1px solid #ddd;margin-bottom: 20px;font-size: 13px;}
+#blog_msg .list-one > div .zan {margin-right:15px;cursor:pointer;padding:2px 5px;color:#34538b;border:solid 1px#ddd;}
+#blog_msg .list-one > div .reply {padding:2px 5px;cursor:pointer;border:solid 1px#ddd;color:#34538b;}
 </style>
 <script src="https://s1.nianran.net/cdn/vue/2.6.10/vue.min.js"></script>
 <script src="https://s1.nianran.net/cdn/axios/0.19.0/axios.min.js"></script>
 <aside class="comments">
   <div id="blog_msg">
     <h2 class="aside-title" @click="replyTarget={}">
-    	<span v-html="typeStr"></span>列表
+      <span v-html="typeStr"></span>列表
       <span style="font-size: 20px;">(<span v-html="list.length||0"></span>条)</span>
     </h2>
     <div v-for="(item,index) in list" class="list-one">
       <div style="position: relative;">
-        <img class="jsAvatar" height="50" width="50" src="https://gravatar.loli.net/avatar/5fd26520ce413785c6445a57e3c79d8c?s=64" style="display: inline-block;vertical-align: middle;margin: 0;position: absolute;">
-        <div style="display: inline-block;vertical-align: middle;left: 0;padding-left: 60px;width: 100%;">
+        <img class="jsAvatar" height="50" width="50" src="https://gravatar.loli.net/avatar/5fd26520ce413785c6445a57e3c79d8c?s=64" style="display:inline-block;vertical-align:middle;margin:0;position:absolute;">
+        <div style="display:inline-block;vertical-align:middle;left:0;padding-left:60px;width:100%;">
           <p style="margin: 0;">
-            <span v-html="item.name" style="font-weight: 600;text-decoration: underline;"></span>
+            <span v-html="item.name" style="font-weight:600;text-decoration:underline;"></span>
             <span v-html="typeStr"></span>:
             <span v-html="item.created_at" style="color: #999;font-size: 12px;" class="float-right clearfix"></span>
           </p>
           <p style="margin: 0;color: #999;">
-            <span v-html="item.content" style="color: #333;"></span> 
+            <span v-html="item.content" style="color: #333;"></span>
           </p>
-          <div style="margin: 15px 0 5px 0;">
-            <span style="margin-right: 15px;cursor: pointer;border: solid 1px #ddd;padding: 2px 5px;color: #34538b;" @click="zanIt(item)">赞
+          <div style="margin:15px 0 5px 0;">
+            <span class="zan" @click="zanIt(item)">赞
               <span v-html="item.zanIps || 0"></span>
             </span>
-            <span style="cursor: pointer;border: solid 1px #ddd;padding: 2px 5px;color: #34538b;" @click="replyIt(item)">回复
+            <span class="reply" @click="replyIt(item)">回复
               <span v-html="item.reply && item.reply.length || 0"></span>
             </span>
           </div>
-          <div v-if="item.reply && replyTarget.id==item.id" style="margin-top: 20px;">
+          <div v-if="item.reply && replyTarget.id==item.id" style="margin-top:20px;">
             <div v-for="(iten,indey) in item.reply" class="list-one">
-              <img class="jsAvatar" height="50" width="50" src="https://gravatar.loli.net/avatar/5fd26520ce413785c6445a57e3c79d8c?s=64" style="display: inline-block;vertical-align: middle;margin: 0;position: absolute;">
-              <div style="display: inline-block;vertical-align: middle;left: 0;padding-left: 60px;width: 100%;">
+              <img class="jsAvatar" height="50" width="50" src="https://gravatar.loli.net/avatar/5fd26520ce413785c6445a57e3c79d8c?s=64" style="display:inline-block;vertical-align:middle;margin:0;position:absolute;">
+              <div style="display:inline-block;vertical-align:middle;left:0;padding-left:60px;width:100%;">
                 <p style="margin: 0;">
-                  <span v-html="iten.name" style="font-weight: 600;text-decoration: underline;"></span>
+                  <span v-html="iten.name" style="font-weight:600;text-decoration: underline;"></span>
                   <span>回复:</span>
-                  <span v-html="iten.created_at" style="color: #999;font-size: 12px;" class="float-right clearfix"></span>
+                  <span v-html="iten.created_at" style="color:#999;font-size:12px;" class="float-right clearfix"></span>
                 </p>
                 <p style="margin: 0;color: #999;">
-                  <span v-html="iten.content" style="color: #333;"></span> 
+                  <span v-html="iten.content" style="color: #333;"></span>
                 </p>
               </div>
             </div>
@@ -724,20 +727,24 @@
       </div>
     </div>
     <div v-if="list.length==0" style="color: #333;">
-    	暂无<span v-html="typeStr"></span>
+      暂无<span v-html="typeStr"></span>
     </div>
     <div class="submit-form" style="margin-top: 20px;">
-      <p v-if="replyTarget.id"> 
+      <p v-if="replyTarget.id">
         <span>回复</span>
-        <span v-html="replyTarget.name" style="font-weight: 600;text-decoration: underline;"></span>
-        <span style="font-family: sans-serif;font-size: 20px;vertical-align: middle;">“</span>
-        <span v-html="replyTarget.content" style="color: #333;max-width: 200px;display: inline-block;vertical-align: middle;" class="ellipsis"></span> 
-        <span style="font-family: sans-serif;font-size: 20px;vertical-align: middle;">”</span>:
+        <span v-html="replyTarget.name" style="font-weight:600;text-decoration:underline;"></span>
+        <span style="font-family:sans-serif;font-size:20px;vertical-align:middle;">“</span>
+        <span v-html="replyTarget.content" style="color:#333;max-width:200px;display:inline-block;vertical-align:middle;" class="ellipsis"></span>
+        <span style="font-family:sans-serif;font-size:20px;vertical-align:middle;">”</span>:
       </p>
       <p v-else style="color: #333;font-size: 18px;">
-	    	发表<span v-html="typeStr"></span>
+        发表<span v-html="typeStr"></span>
       </p>
-      <p><input v-model="submitForm.name" maxlength="20" placeholder="名称"><span class="star">(必填)</span><span @click="getRandomName" style="padding: 2px 5px;display: inline-block;cursor: pointer;border: 1px solid #673AB7;background-color: #673AB7;margin-left: 10px;color: #fff;font-size: 14px;border-radius: 5px;">获取花名</span></p>
+      <p>
+        <input v-model="submitForm.name" maxlength="20" placeholder="名称">
+        <span class="star">(必填)</span>
+        <span @click="getRandomName" class="r-name">获取花名</span>
+      </p>
       <p v-if="vtips.name" v-html="vtips.name" class="red"></p>
       <p><input v-model="submitForm.email" maxlength="50" placeholder="邮箱地址(不会被公开)"><span class="star">(必填)</span></p>
       <p v-if="vtips.email" v-html="vtips.email" class="red"></p>
@@ -872,6 +879,9 @@
           }
         },
         createdLogs:function(f){
+          if(window.location.port){
+            return
+          }
           var logf = {
             title: path,
             user: (f.name||'')+(f.email||'')||'0',
