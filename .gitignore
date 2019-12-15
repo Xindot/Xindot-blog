@@ -43,3 +43,5 @@ node_modules
 
 # assets/img2
 # assets/img/*
+
+.vscode
