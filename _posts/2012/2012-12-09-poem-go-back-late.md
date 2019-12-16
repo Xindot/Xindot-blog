@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 诗《归晚》
-tags: []
+categories: [poem]
+
 ---
 
 > 归晚

@@ -3,7 +3,8 @@ layout: default
 ---
 
 {% for category in site.categories %}
-<h1>{{ category | first }}</h1>
+{% if category[0] == page.category %}
+<h2>{{page.title}} / {{ category | first }}</h2>
 <ul class="arc-list">
   {% for post in category.last %}
   <li>
@@ -12,4 +13,5 @@ layout: default
   </li>
   {% endfor %}
 </ul>
+{% endif %}
 {% endfor %}

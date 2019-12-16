@@ -1,5 +1,7 @@
 ---
 layout: blog-by-category
-title: 分类
+title: IT技术
+category: it
+
 ---
 
