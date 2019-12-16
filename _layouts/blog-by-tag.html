@@ -43,3 +43,23 @@ layout: default
 
 {% include blog_msg.html %}
 
+<p style="height: 40px;"></p>
+
+{% if site.tags.size > 0 %}
+<h2 class="aside-title">文章标签</h2>
+{% for tag in site.tags %}
+<a href="{{ site.baseurl }}/tag/{{ tag[0] }}/"> {{ tag[0] }}</a>
+{% endfor %}
+{% endif %}
+
+<p style="height: 40px;"></p>
+
+{% if site.categories.size>0 %}
+<h2 class="aside-title">文章分类</h2>
+{% for category in site.categories %}
+<a href="/category/{{ category | first }}">
+  <span>{{ category | first }}</span>
+  <span>({{ category | last | size }})</span>
+</a>
+{% endfor %}
+{% endif %}

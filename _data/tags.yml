@@ -93,4 +93,10 @@ jekyll:
     但是可以配合第三方服务,例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。
     <a href="http://jekyllcn.com/docs/home/" target="_blank">文档</a>
 
-    
+mac:
+  name: Mac
+  image: http://img.6h5.cn/xindot-blog/bg-0002-s.jpeg
+  color: '#0071e3'
+  description: >
+    麦金塔计算机（香港俗称Mac机）是苹果计算机在1984年1月发布的新型个人计算机。麦金塔是苹果计算机继LISA后第二部使用图形用户界面的计算机。而麦金塔是首次将图形用户界面广泛应用到个人计算机之上。
+    <a href="https://xclient.info/" target="_blank">精品MAV应用分享</a>    
