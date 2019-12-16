@@ -102,12 +102,11 @@
       return regExp.email.test(str)
     }
     var host = '{{site.blog_msg.host}}'
-    var postUrl = '{{post.url}}'
-    var pageUrl = '{{page.url}}'
-    var typeStr = postUrl ? '评论' : '留言'
-    var path = postUrl || pageUrl
+    var postTitle = '{{post.title}}' || '{{page.title}}'
+    var typeStr = '{{post.url}}' ? '评论' : '留言'
+    var path = '{{post.url}}' || '{{page.url}}'
     // path = encodeURIComponent(path)
-    // console.log(host,postUrl,pageUrl,path,typeStr)
+    // console.log(host,path,typeStr)
     var vm = new Vue({
       el: '#blog_msg',
       data: {
@@ -252,6 +251,7 @@
             user: (f.name || '') + (f.email || '') || '0',
             content: JSON.stringify({
               url: window.location.href,
+              title: postTitle,
               UA: window.navigator.userAgent,
             }),
             category: 'xinBlog',

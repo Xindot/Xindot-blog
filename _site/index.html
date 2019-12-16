@@ -784,12 +784,11 @@
       return regExp.email.test(str)
     }
     var host = 'https://www.nianran.net/SunApi/'
-    var postUrl = ''
-    var pageUrl = '/'
-    var typeStr = postUrl ? '评论' : '留言'
-    var path = postUrl || pageUrl
+    var postTitle = '' || 'Xindot'
+    var typeStr = '' ? '评论' : '留言'
+    var path = '' || '/'
     // path = encodeURIComponent(path)
-    // console.log(host,postUrl,pageUrl,path,typeStr)
+    // console.log(host,path,typeStr)
     var vm = new Vue({
       el: '#blog_msg',
       data: {
@@ -934,6 +933,7 @@
             user: (f.name || '') + (f.email || '') || '0',
             content: JSON.stringify({
               url: window.location.href,
+              title: postTitle,
               UA: window.navigator.userAgent,
             }),
             category: 'xinBlog',
