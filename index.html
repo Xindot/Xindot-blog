@@ -6,7 +6,8 @@ title: Xindot
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
-{% unless forloop.first %}</ul><hr/>{% endunless %}
+{% unless forloop.first %}</ul>
+<hr />{% endunless %}
 <h2 id="y{{post.date | date:'%Y' }}" class="page-title">{{ currentdate }}</h2>
 <ul class="related-posts">
   {% assign date = currentdate %}
@@ -19,9 +20,10 @@ title: Xindot
       </a>
     </h4>
   </li>
-  {% if forloop.last %}</ul><hr/>{% endif %}
-  {% endfor %}
+  {% if forloop.last %}</ul>
+<hr />{% endif %}
+{% endfor %}
 
-  <p style="height: 20px;"></p>
+<p style="height: 20px;"></p>
 
-  {% include blog_msg.html %}
+{% include blog_msg.html %}

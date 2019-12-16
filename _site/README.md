@@ -21,3 +21,8 @@ jekyll build
 "qiniu.localPath": "./img",
 "qiniu.remotePath": "xindot-blog/paste/${fileName}"
 ```
+
+## 加入vscode开启了beautify，可以设置忽略选项，避免被格式化
+"beautify.ignore": ["**/_includes/**", "**/_layouts/**"]
+如果遇到css中遇到jekyll中定义的```{{}}```变量语法警告，css验证也可以关掉
+"css.validate": false
