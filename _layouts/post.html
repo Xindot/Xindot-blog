@@ -25,9 +25,9 @@ layout: default
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-date">
-    <time datetime="{{ page.date | date_to_xmlschema }}">发布于{{ page.date | date: "%Y年%m月%d日" }}</time>
-    <span style="margin-left: 10px;">{{ tags_content }}</span>
-    <span id="postReadNum" style="margin-left: 10px;"></span>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y年%m月%d日" }}</time>
+    <span style="margin-left: 5px;">{{ tags_content }}</span>
+    <span id="postReadNum" style="margin-left: 5px;"></span>
   </div>
   {% if post.description %} {% comment %} Adding the "message" class to the last (and usually only) paragraph of the
   description.

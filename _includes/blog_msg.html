@@ -280,11 +280,9 @@
             // console.log(res.data);
             if(res.data.code==200){
               var readNum = res.data.result || {}
-              console.log('readNum=>',readNum)
-
-                              var sDom = document.getElementById('postReadNum')
-                              sDom.innerHTML = '阅读 '+readNum.postRead+' 次, 今日 '+readNum.postTodayRead+' 次'
-                              document.getElementById('blogRead').innerHTML = '文章总阅读 ' + readNum.blogRead+' 次'
+              // console.log('readNum=>',readNum)
+              document.getElementById('postReadNum').innerHTML = '阅读 '+readNum.postRead+' 次, 今日'+readNum.postTodayRead+' 次'
+              document.getElementById('blogRead').innerHTML = '总阅读 ' + readNum.blogRead+' 次'
             }
           }).catch(function (error) {
             console.log(error);
