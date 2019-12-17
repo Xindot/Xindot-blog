@@ -64,12 +64,12 @@ layout: default
   <ul class="related-posts">
     {% for post in site.tags[tag_name] limit:11 %} {% if post.url == page.url %} {% assign plusone = true %}
     {% continue %} {% endif %} {% if forloop.index < 10 or plusone == true %} <li>
-      <h4>
+      <h6>
         <a href="{{ post.url | prepend:site.baseurl }}">
           <span>{{ post.title }}</span>
           <small>{{ post.date | date: "%m/%d/%y" }}</small>
         </a>
-      </h4>
+      </h6>
     </li>
     {% endif %} {% endfor %}
   </ul>
@@ -120,12 +120,12 @@ layout: default
   <ul style="padding-left: 0;list-style: none;">
     {% for item in site.data.courses %}
     <li>
-      <h4>
+      <h6>
         <a href="{{ item[1] }}" target="_blank">
           <span>{{ item[0] }}</span>
           <small style="font-size: 75%;color: #999;white-space: nowrap;">{{ item[2] }}</small>
         </a>
-      </h4>
+      </h6>
     </li>
     {% endfor %}
   </ul>
