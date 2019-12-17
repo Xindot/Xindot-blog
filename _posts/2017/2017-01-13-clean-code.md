@@ -2,6 +2,8 @@
 layout: post
 title: js小结：JavaScript 代码整洁之道（一）
 tags: [js]
+categories: [it]
+
 ---
 
 

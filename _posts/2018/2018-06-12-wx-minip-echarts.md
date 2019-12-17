@@ -2,6 +2,7 @@
 layout: post
 title: 微信小程序中使用echarts
 tags: []
+categories: [it]
 
 ---
 

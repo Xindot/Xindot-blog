@@ -2,6 +2,7 @@
 layout: post
 title: vscode中的 jsconfig.json
 tags: [js]
+categories: [it]
 
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: 如何在Windows环境的Git Bash下使用rsync？
 tags: [git]
+categories: [it]
 
 ---
 

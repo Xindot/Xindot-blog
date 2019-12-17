@@ -2,6 +2,7 @@
 layout: post
 title: jekyll博客装修日志：添加留言/评论等功能
 tags: [jekyll]
+categories: [it]
 
 ---
 

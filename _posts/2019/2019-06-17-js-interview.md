@@ -2,6 +2,7 @@
 layout: post
 title: 45道JS面试题【整理篇】
 tags: [js]
+categories: [it]
 
 ---
 

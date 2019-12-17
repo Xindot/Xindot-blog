@@ -2,6 +2,8 @@
 layout: post
 title: 通读superagent文档【整理稿】
 tags: [nodejs]
+categories: [it]
+
 ---
 
 本文主要参考superagent的官方文档，基本上就是它的翻译。题外话，superagent真是一个不错的nodejs模块，推荐使用。

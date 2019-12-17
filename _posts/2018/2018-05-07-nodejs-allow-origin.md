@@ -2,6 +2,7 @@
 layout: post
 title: Node.js设置允许多个域名跨域、或nginx
 tags: [nodejs,nginx]
+categories: [it]
 
 ---
 

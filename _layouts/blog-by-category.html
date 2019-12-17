@@ -8,10 +8,10 @@ layout: default
 <ul class="arc-list related-posts">
   {% for post in category.last %}
   <li>
-    <h5>
+    <h6>
       <a href="{{ post.url }}">{{ post.title }}</a>
       <span style="margin-left: 5px;font-size: 14px;opacity: .5;">{{ post.date | date:"%Y/%m/%d"}}</span>
-    </h5>
+    </h6>
   </li>
   {% endfor %}
 </ul>

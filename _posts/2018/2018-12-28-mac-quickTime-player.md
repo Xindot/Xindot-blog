@@ -2,6 +2,7 @@
 layout: post
 title: 如何用Mac自带软件录屏且只录制屏内或屏外声音
 tags: [mac]
+categories: [it]
 
 ---
 

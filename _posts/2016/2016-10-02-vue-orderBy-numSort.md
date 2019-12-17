@@ -2,6 +2,8 @@
 layout: post
 title: vue orderBy按数值大小排序
 tags: [vue]
+categories: [it]
+
 ---
 
 

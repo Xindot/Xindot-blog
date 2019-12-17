@@ -2,6 +2,8 @@
 layout: post
 title: linux重定向及nohup不输出的方法【整理稿】
 tags: [nodejs]
+categories: [it]
+
 ---
 
 

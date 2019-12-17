@@ -2,6 +2,8 @@
 layout: post
 title: 前端面试之js篇（一）
 tags: [js]
+categories: [it]
+
 ---
 
 #### Q1：JavaScript包含哪些数据类型，请分别写出3种以上类型的判断函数如：isString()？
