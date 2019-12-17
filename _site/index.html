@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="/assets/css/duoshuo.css">
   <link rel="stylesheet" href="/assets/css/xindot.css">
 
-  <link rel="canonical" href="/" />
+  <link rel="canonical" href="http://localhost:4000/" />
   
    
 
@@ -48,7 +48,7 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="心刀 の 博客"
-    href="/atom.xml">
+    href="http://localhost:4000/atom.xml">
   <!-- weibo -->
   <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </head>
@@ -980,7 +980,7 @@
             if(res.data.code==200){
               var readNum = res.data.result || {}
               // console.log('readNum=>',readNum)
-              document.getElementById('postReadNum').innerHTML = '阅读 '+readNum.postRead+' 次, 今日'+readNum.postTodayRead+' 次'
+              document.getElementById('postReadNum').innerHTML = '阅读 '+readNum.postRead+' 次, 今日 '+readNum.postTodayRead+' 次'
               document.getElementById('blogRead').innerHTML = '总阅读 ' + readNum.blogRead+' 次'
             }
           }).catch(function (error) {

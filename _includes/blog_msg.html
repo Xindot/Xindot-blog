@@ -281,7 +281,7 @@
             if(res.data.code==200){
               var readNum = res.data.result || {}
               // console.log('readNum=>',readNum)
-              document.getElementById('postReadNum').innerHTML = '阅读 '+readNum.postRead+' 次, 今日'+readNum.postTodayRead+' 次'
+              document.getElementById('postReadNum').innerHTML = '阅读 '+readNum.postRead+' 次, 今日 '+readNum.postTodayRead+' 次'
               document.getElementById('blogRead').innerHTML = '总阅读 ' + readNum.blogRead+' 次'
             }
           }).catch(function (error) {
