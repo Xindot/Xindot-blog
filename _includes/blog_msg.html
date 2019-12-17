@@ -140,7 +140,9 @@
       },
       mounted: function () {
         this.getList()
-        this.getReadNum()
+        if(from=='post'){
+          this.getReadNum()
+        }
         // if(!this.submitForm.name){
         //   this.getRandomName()
         // }
