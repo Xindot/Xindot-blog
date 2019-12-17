@@ -792,8 +792,10 @@
     var postTitle = '' || 'Xindot'
     var typeStr = '' ? '评论' : '留言'
     var path = '' || '/'
+    var from = '' || ''
     // path = encodeURIComponent(path)
     // console.log(host,path,typeStr)
+    // console.log(from)
     var vm = new Vue({
       el: '#blog_msg',
       data: {
@@ -816,10 +818,16 @@
         var f = JSON.parse(window.localStorage.getItem('blogMsg.submitForm') || '{}')
         this.submitForm.name = f.name
         this.submitForm.email = f.email
-        this.createdLogs(f)
+        if(from=='post'){
+          this.createdLogs(f)
+          // document.addEventListener("DOMContentLoaded", function (_event) {
+          //   // console.log(2)
+          // });
+        }
       },
       mounted: function () {
         this.getList()
+        this.getReadNum()
         // if(!this.submitForm.name){
         //   this.getRandomName()
         // }
@@ -893,7 +901,7 @@
             return;
           }
           if (!f.content) {
-            this.vtips.content = `请填写${typeStr}内容`;
+            this.vtips.content = '请填写'+typeStr+'内容';
             return;
           }
           window.localStorage.setItem('blogMsg.submitForm', JSON.stringify(f))
@@ -901,7 +909,7 @@
           var _this = this
           if (msgId) {
             axios.post(host + 'blogMsg/reply/' + msgId, f).then(function (res) {
-              console.log(res);
+              // console.log(res);
               if (res.data.code == 200) {
                 alert('您的回复已经提交成功')
                 _this.submitForm.content = ''
@@ -945,6 +953,24 @@
           };
           axios.post(host + 'logs/create', logf).then(function (res) {
             console.log(res.data);
+          }).catch(function (error) {
+            console.log(error);
+          });
+        },
+        getReadNum: function (){
+          var f = {
+            path
+          }
+          axios.get(host + 'blogMsg/readNum', {params:f}).then(function (res) {
+            // console.log(res.data);
+            if(res.data.code==200){
+              var readNum = res.data.result || {}
+              console.log('readNum=>',readNum)
+
+                              var sDom = document.getElementById('postReadNum')
+                              sDom.innerHTML = '阅读 '+readNum.postRead+' 次, 今日 '+readNum.postTodayRead+' 次'
+                              document.getElementById('blogRead').innerHTML = '文章总阅读 ' + readNum.blogRead+' 次'
+            }
           }).catch(function (error) {
             console.log(error);
           });
@@ -1090,6 +1116,7 @@
   <div style="text-align: right;font-size: 10px;opacity: .5;color: #fff;">
     Powered by <a href="http://jekyllcn.com/" target="_blank" style="color: #fff;">Jekyll</a>
     <p id="Year" style="font-size: 10px;"></p>
+    <p id="blogRead" style="font-size: 10px;"></p>
     <script type="text/javascript">
       // console.log(new Date().getFullYear())
       document.getElementById('Year').innerHTML = 'By Xindot © ' + new Date().getFullYear()
