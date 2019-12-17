@@ -17,7 +17,7 @@
   }
   document.addEventListener("DOMContentLoaded", function () {
     var article = document.getElementsByTagName("article")[0];
-    var headers = article.querySelectorAll('h2,h4');
+    var headers = article.querySelectorAll('h2,h3,h4,h5,h6');
     if(headers.length<1){
       return
     }
@@ -32,8 +32,10 @@
     div.appendChild(h4)
     var style = {
     'H2': 'padding-left:0px;',
-    'H4': 'padding-left:15px;',
-    'H6': 'padding-left:30px;',
+    'H3': 'padding-left:10px;',
+    'H4': 'padding-left:20px;',
+    'H5': 'padding-left:30px;',
+    'H6': 'padding-left:40px;'
     }
     for (var i = 0; i < headers.length; i++) {
       var el = headers[i]

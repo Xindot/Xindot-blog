@@ -13,12 +13,12 @@ title: Xindot
   {% assign date = currentdate %}
   {% endif %}
   <li>
-    <h4>
+    <h6>
       <a href="{{ site.baseurl }}{{ post.url }}">
         <span>{{ post.title }}</span>
         <small>{{ post.date | date: "%m/%d" }}</small>
       </a>
-    </h4>
+    </h6>
   </li>
   {% if forloop.last %}</ul>
 <hr />{% endif %}

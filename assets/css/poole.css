@@ -248,14 +248,6 @@ code.highlighter-rouge {
 
 /* Quotes */
 blockquote {
-  /*padding: .5rem;
-  margin: .8rem 0;
-  color: #A85641;
-  border: solid .5px;
-  border-left: solid .5rem;
-  background-color: #f7f7f7;
-  font-size: .9rem;
-  text-align: justify;*/
   padding: 20px;
   background-color: #fafafa;
   border-left: 6px solid #e6e6e6;

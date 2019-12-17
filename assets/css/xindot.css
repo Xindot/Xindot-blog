@@ -14,42 +14,50 @@
  *
  */
 
-html,h1, h3, h5 {
-    font-family: Exo,'-apple-system','Open Sans',HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue','Hiragino Sans GB','Microsoft YaHei',Helvetica,Arial,sans-serif!important;
-    -webkit-font-smoothing: antialiased!important;
+html {
+  font-family: Exo, '-apple-system', 'Open Sans', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
 }
+
 em {
-    font-style: unset;
+  font-style: unset;
 }
- 
-.rotate-infinite{
+
+.rotate-infinite {
   transition: 0.5s;
-  transform-origin: center;  
-  animation: rotate 60s linear infinite;  /*开始动画后无限循环，用来控制rotate*/
+  transform-origin: center;
+  animation: rotate 60s linear infinite;
+  /*开始动画后无限循环，用来控制rotate*/
 }
-@keyframes rotate{
-  0%{
+
+@keyframes rotate {
+  0% {
     transform: rotate(0);
   }
-  50%{
-  	transform:rotate(180deg);
+
+  50% {
+    transform: rotate(180deg);
   }
-  100%{
+
+  100% {
     transform: rotate(360deg);
   }
 }
 
 
 /* weibo */
-.WB_follow_ex .status_followed .follow_text, .WB_follow_ex .status_following .follow_text {
+.WB_follow_ex .status_followed .follow_text,
+.WB_follow_ex .status_following .follow_text {
   box-sizing: initial;
 }
+
 .WB_follow_ex .user_avatar_img {
   margin: 0;
   display: inline-block;
 }
+
 .WB_widget a:hover {
-  border-bottom: none!important;
+  border-bottom: none !important;
 }
 
 
@@ -80,10 +88,6 @@ em {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  /*display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;*/
 }
 
 input,
@@ -94,4 +98,3 @@ textarea {
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
-

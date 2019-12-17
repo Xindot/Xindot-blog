@@ -24,18 +24,18 @@ layout: default
       <h2 id="y{{post.date | date: '%Y'}}">{{ currentdate }}</h2>
       <ul class="related-posts">
       {% assign date = currentdate %}
-    {% endif %}
-    <li>
-      <h4>
-        <a href="{{ post.url | prepend:site.baseurl }}">
-          <span>{{ post.title }}</span>
-          <small>{{ post.date | date: "%m/%d" }}</small>
-        </a>
-      </h4>
-    </li>
-    {% if forloop.last %}</ul><hr/>{% endif %}
-  {% endfor %}
-{% else %}
+        {% endif %}
+        <li>
+          <h6>
+            <a href="{{ post.url | prepend:site.baseurl }}">
+              <span>{{ post.title }}</span>
+              <small>{{ post.date | date: "%m/%d" }}</small>
+            </a>
+          </h6>
+        </li>
+        {% if forloop.last %}</ul><hr/>{% endif %}
+      {% endfor %}
+    {% else %}
     <p style="opacity: .3;font-size: .9rem;">博主太懒了，没有更多文章了</p>
 {% endif %}
 
