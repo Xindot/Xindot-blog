@@ -5,7 +5,7 @@ tags: [nodejs,nginx]
 
 ---
 
-#### 1 全局设置: `app.js` 中
+### 1 全局设置: `app.js` 中
 
 ```
 var orginList = [
@@ -27,7 +27,7 @@ app.all("*", function (req, res, next) {
 // app.use('/user', require('./routes/user'));
 ```
 
-#### 2 局部路由设置: 比如说在 `routes/user.js` 下面
+### 2 局部路由设置: 比如说在 `routes/user.js` 下面
 
 ```
 var orginList = [
@@ -49,9 +49,9 @@ router.all("/*", function (req, res, next) {
 //router.get('/list', (req, res) => { res.send({code:200})} )
 ```
 
-#### 3 如果不想在node项目中设置，可以选择设置nginx
+### 3 如果不想在node项目中设置，可以选择设置nginx
 
-###### 3.1 正则匹配：*[Nginx如何配置跨域(多个域名)](https://blog.csdn.net/moxiaomomo/article/details/82970004){:target="_blank"}*
+##### 3.1 正则匹配：*[Nginx如何配置跨域(多个域名)](https://blog.csdn.net/moxiaomomo/article/details/82970004){:target="_blank"}*
 
 ```
 location / {
@@ -74,7 +74,7 @@ location / {
 }
 ```
 
-###### 3.2 map匹配：*[Nginx 允许多个域名跨域访问](https://www.123admin.com/how-to-enable-cross-origin-requests-cors-on-nginx/){:target="_blank"}*
+##### 3.2 map匹配：*[Nginx 允许多个域名跨域访问](https://www.123admin.com/how-to-enable-cross-origin-requests-cors-on-nginx/){:target="_blank"}*
 
 ```
 map $http_origin $corsHost {
