@@ -36,7 +36,13 @@ layout: default
 </article>
 
 
-{% include blog_msg.html %} {% if site.author.about %}
+{% include post_menu.html %}
+
+
+{% include blog_msg.html %} 
+
+
+{% if site.author.about %}
 <aside class="related author">
   <h2 class="aside-title">关于作者</h2>
 
@@ -106,6 +112,8 @@ layout: default
     <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
   </noscript>
 </aside>
+
+
 {% endif %} {% if site.data.courses %}
 <aside class="related data-courses">
   <h2 class="aside-title">推荐课程</h2>
@@ -122,6 +130,8 @@ layout: default
     {% endfor %}
   </ul>
 </aside>
+
+
 {% endif %} {% if site.data.books %}
 <aside class="related data-books">
   <h2 class="aside-title">推荐书籍</h2>
@@ -135,9 +145,6 @@ layout: default
 </aside>
 {% endif %}
 
-<!-- {% for category in site.categories %}
-<h2 class="aside-title">{{category[0]}}({{category | last | size}})</h2>
-{% for post in category[1] %}
-<p><a href="{{post.url}}">{{post.title}}</a></p>
-{% endfor %}
-{% endfor %} -->
+
+
+

@@ -1,0 +1,75 @@
+<script type="text/javascript">
+  function insertAfter(newElement, targetElement) {
+    var parent = targetElement.parentNode;
+    if (parent.lastChild == targetElement) {
+      parent.appendChild(newElement);
+    } else {
+      parent.insertBefore(newElement, targetElement.nextSibling);
+    }
+  }
+  function _scrollTo(id) {
+    var _id = document.getElementById(id);
+    // window.scrollTo(0,_id.offsetTop);
+    window.scrollTo({
+      top: _id.offsetTop,
+      behavior: "smooth"
+    });
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var article = document.getElementsByTagName("article")[0];
+    var headers = article.querySelectorAll('h2,h4');
+    if(headers.length<1){
+      return
+    }
+    var main = document.getElementsByTagName("main")[0];
+    var rightAttach = document.createElement("aside")
+    rightAttach.className = 'right-post-attach'
+    var div = document.createElement("div");
+    div.className = 'post-article-menu'
+    var h4 = document.createElement('h4')
+    h4.innerHTML = '目录'
+    h4.setAttribute('style','margin:0 0 15px 0;')
+    div.appendChild(h4)
+    var style = {
+    'H2': 'padding-left:0px;',
+    'H4': 'padding-left:15px;',
+    'H6': 'padding-left:30px;',
+    }
+    for (var i = 0; i < headers.length; i++) {
+      var el = headers[i]
+      var p = document.createElement("p");
+      p.className = "ellipsis"
+      p.setAttribute('style', style[el.tagName])
+      var a = document.createElement("a")
+      a.href = 'javascript:;'
+      a.innerHTML = el.innerText
+      a.setAttribute("onclick", "_scrollTo('" + el.id + "')");
+      p.appendChild(a)
+      div.appendChild(p)
+    }
+    rightAttach.appendChild(div)
+    insertAfter(rightAttach, main)
+  });
+</script>
+<style>
+  .post-article-menu {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    z-index: 11;
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 25%;
+    max-height: 500px;
+    overflow: auto;
+    border: solid 1px #efefef;
+    background-color: aliceblue;
+    border-radius: 5px;
+    transform: translateX(16rem);
+  }
+  @media (max-width: 1400px) {
+    .post-article-menu {
+      display: none;
+    }
+  }
+</style>
