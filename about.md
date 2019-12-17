@@ -29,7 +29,7 @@ title: About Me
 
 ###### 我的周边
 >*[个人简历 · IT](http://xiexin.xin/){:target="_blank"}<br/>*
->*[猫博客 · MaoMao日常](http://maomao.nuoluan.com){:target="_blank"}*
+>*[猫博客 · MaoMao日常](http://maomao.xindot.com){:target="_blank"}*
 
 ---
 
