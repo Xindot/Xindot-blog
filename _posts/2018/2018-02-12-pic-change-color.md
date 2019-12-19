@@ -12,7 +12,7 @@ categories: [it]
 
 ### 效果
 
-![201911190001](https://img.6h5.cn/xindot-blog/gif/201911190001.gif)
+![201911190001](http://img.6h5.cn/xindot-blog/gif/201911190001.gif)
 
 ![20191219170328](http://img.6h5.cn/xindot-blog/paste/20191219170328.png)
 
