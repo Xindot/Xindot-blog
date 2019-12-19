@@ -248,7 +248,7 @@ code.highlighter-rouge {
 
 /* Quotes */
 blockquote {
-  padding: 20px;
+  padding: 12px;
   background-color: #fafafa;
   border-left: 6px solid #e6e6e6;
   word-break: break-word;
@@ -256,6 +256,11 @@ blockquote {
   font-weight: normal;
   line-height: 30px;
   margin: 0 0 20px;
+}
+
+blockquote p {
+  margin: 0;
+  padding: 0;
 }
 
 blockquote p:last-child {
