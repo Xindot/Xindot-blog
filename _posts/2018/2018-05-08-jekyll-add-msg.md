@@ -8,7 +8,7 @@ categories: [it]
 
 > **前言：** 搭建jekyll很久了，文章偶尔写写，不过总感觉缺少点什么，留言板？评论框？有多少读者？问题反馈？总之是缺少与用户交互的模块，没有互动感。最近觉得有必要对博客进行折腾一番了，于是就添加了 **“微博关注按钮”**、**“推荐课程”**、**“我的书架”**、**“留言/评论功能”** 四个模块，顿时感觉博客丰富了许多，(*^▽^*)，心得如下，献丑了：
 
-## 1.微博关注按钮
+## 1 微博关注按钮
 
 来先看微博给到的*[文档](https://open.weibo.com/widget/followbutton.php){:target="_blank"}*里面的设置按钮样式、及部署三要素：
 
@@ -30,7 +30,7 @@ categories: [it]
 <wb:follow-button uid="3129142911" type="red_1" width="67" height="24" ></wb:follow-button>
 ```
 
-###### 补充我的部署： 在`_layouts/post.html`中添加代码块
+#### 1.1 补充我的部署： 在`_layouts/post.html`中添加代码块
 
 ![微博关注按钮位置](http://img.6h5.cn/xindot-blog/paste/20191215183506.png)
 
@@ -40,7 +40,7 @@ categories: [it]
 
 ---
 
-## 2.推荐课程/我的书架
+## 2 推荐课程/我的书架
 
 先不说别的，来看一下效果
 
@@ -60,11 +60,11 @@ categories: [it]
 
 ![课程展示代码](http://img.6h5.cn/xindot-blog/paste/20191215202716.png)
 
-#### 我的书架功能同上
+#### 2.1 我的书架功能同上
 
 ---
 
-## 3.留言/评论功能
+## 3 留言/评论功能
 
 jekyll自带**disqus**评论社区，不过有博友反映国内速度慢，我想你懂得。如果你想尝试，这里推荐一篇文章：
 [正确的Disqus使用姿势](https://www.jianshu.com/p/7e4453421b8f){:target="_blank"}<br/>

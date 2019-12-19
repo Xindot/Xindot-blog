@@ -10,22 +10,22 @@ categories: [it]
 最近在留意一些比较好的交互，也就当是学习了。
 觉得这个还不错，来看效果：[Element](https://element.eleme.cn/2.11/#/zh-CN){:target="_blank"}
 
-### 效果
+### 1 效果
 
 ![201911190001](http://img.6h5.cn/xindot-blog/gif/201911190001.gif)
 
 ![20191219170328](http://img.6h5.cn/xindot-blog/paste/20191219170328.png)
 
-### 原理
+### 2 原理
 
 > 其实原理简单，就是用了两个图片，图片完全重叠，并设置了上面图片显示的高度
 
 ![](https://element.eleme.cn/2.11/static/theme-index-blue.c38b733.png){:style="width:200px;display:inline-block;"}
 ![](https://element.eleme.cn/2.11/static/theme-index-red.c8e136e.png){:style="width:200px;display:inline-block;"}
 
-### 代码
+### 3 代码
 
-##### html 通过js监听滚动改变高度
+##### 3.1 html 通过js监听滚动改变高度
 ```
 <div class="jumbotron">
   <img src="https://element.eleme.cn/2.11/static/theme-index-blue.c38b733.png" alt="">
@@ -35,7 +35,7 @@ categories: [it]
 </div>
 ```
 
-##### css 加了过渡效果
+##### 3.2 css 加了过渡效果
 ```
 .jumbotron .jumbotron-red {
   transition: height .1s;
