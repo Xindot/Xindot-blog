@@ -21,9 +21,9 @@ categories: [it]
 }
 ```
 
-### 3 兼容性
+### 3 兼容性 [text-align-last](https://caniuse.com/#search=text-align-last){:target="_blank"}
 
-![20191219184539](http://img.6h5.cn/xindot-blog/paste/20191219184539.png)
+![20191219191025](http://img.6h5.cn/xindot-blog/paste/20191219191025.png)
 
 > 参考:<br/>
 [text-align-last 实现文本居中对齐](https://www.cnblogs.com/mengfangui/p/11445139.html){:target="_blank"}<br/>
