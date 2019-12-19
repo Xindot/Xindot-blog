@@ -1,7 +1,7 @@
 ---
 layout: post
 title: text-align-last 实现几个汉字的两端分散对齐
-tags: [js]
+tags: [css]
 categories: [it]
 
 ---
