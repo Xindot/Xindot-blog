@@ -21,7 +21,7 @@ categories: [it]
 }
 ```
 
-### 3 兼容性 [text-align-last](https://caniuse.com/#search=text-align-last){:target="_blank"}
+### 3 兼容性 [caniuse text-align-last](https://caniuse.com/#search=text-align-last){:target="_blank"}
 
 ![20191219191025](http://img.6h5.cn/xindot-blog/paste/20191219191025.png)
 
