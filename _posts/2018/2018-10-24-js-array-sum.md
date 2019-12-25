@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 比较几种js数组求和的方法
-tags: []
+tags: [js]
 categories: [it]
 
 ---
