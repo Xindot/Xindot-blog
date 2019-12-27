@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="/assets/css/xindot.css">
   <!-- <link rel="stylesheet" href="https://qdstatic-1252317822.file.myqcloud.com/yfont/cd98d070f44925eadd401ad1996b6fe5/SYSTC.css"> -->
   
-  <link rel="canonical" href="/" />
+  <link rel="canonical" href="http://localhost:4000/" />
   
    
 
@@ -49,7 +49,7 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="心刀 の 博客"
-    href="/atom.xml">
+    href="http://localhost:4000/atom.xml">
   <!-- weibo -->
   <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </head>
@@ -1040,6 +1040,55 @@
     })
   </script>
 </aside>
+
+
+
+
+<script src="https://s1.nianran.net/cdn/vue/2.6.10/vue.min.js"></script>
+<script src="https://s1.nianran.net/cdn/axios/0.19.0/axios.min.js"></script>
+
+<aside class="fe-better-me">
+  <div id="fe_better_me">
+    <h3>前端心选</h3>
+  </div>
+</aside>
+
+<script>
+  var vm1 = new Vue({
+    el:'#fe_better_me',
+    data:{
+
+    },
+    created:function () {
+      
+    },
+    mounted:function(){
+
+    }
+  }) 
+</script>
+
+<style>
+  .fe-better-me {
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: right;
+    width: 400px;
+    padding: 0 20px;
+    color: #fff;
+    min-height: 100px;
+  }
+  .fe-better-me > div h3 {
+    padding-bottom: 15px;
+    border-bottom: solid 2px #eeeeee;
+  }
+  @media (max-width: 1400px) {
+    .fe-better-me {
+      display: none;
+    }
+  }
+</style>
 
     </main>
 

@@ -1,0 +1,47 @@
+{% if site.fe_better_me.visible %}
+<script src="https://s1.nianran.net/cdn/vue/2.6.10/vue.min.js"></script>
+<script src="https://s1.nianran.net/cdn/axios/0.19.0/axios.min.js"></script>
+
+<aside class="fe-better-me">
+  <div id="fe_better_me">
+    <h3>前端心选</h3>
+  </div>
+</aside>
+
+<script>
+  var vm1 = new Vue({
+    el:'#fe_better_me',
+    data:{
+
+    },
+    created:function () {
+      
+    },
+    mounted:function(){
+
+    }
+  }) 
+</script>
+
+<style>
+  .fe-better-me {
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: right;
+    width: 400px;
+    padding: 0 20px;
+    color: #fff;
+    min-height: 100px;
+  }
+  .fe-better-me > div h3 {
+    padding-bottom: 15px;
+    border-bottom: solid 2px #eeeeee;
+  }
+  @media (max-width: 1400px) {
+    .fe-better-me {
+      display: none;
+    }
+  }
+</style>
+{% endif %}

@@ -58,3 +58,7 @@ attach:
 # 博客留言或评论模块
 blog_msg:
   host: https://www.nianran.net/SunApi/
+
+# 前端笔墨 FeBetterMe
+fe_better_me:
+  visible: true
