@@ -87,7 +87,7 @@
             // 设置传入的值    
             self.value = value;
             // 执行回调函数    
-            self.resolvedCallbacks.forEach(callback => {
+            self.resolvedCallbacks.forEach(function (callback) {
               callback(value);
             });
           }
@@ -104,7 +104,7 @@
             // 设置传入的值    
             self.value = value;
             // 执行回调函数      
-            self.rejectedCallbacks.forEach(callback => {
+            self.rejectedCallbacks.forEach(function (callback) {
               callback(value);
             });
           }
@@ -144,7 +144,7 @@
   <script id="jsDemo">
     // js
     function promise_demo() {
-      var p = new MyPromise((resolve, reject) => {
+      var p = new MyPromise(function (resolve, reject) {
         resolve('run ok')
       })
       p.then(res => {
