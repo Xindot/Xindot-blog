@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS实现三角形、梯形</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .one {
+      padding: 10px;
+      box-sizing: border-box;
+      border: solid 1px #000;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .triangle-4 {
+      width: 0;
+      height: 0;
+      display: inline-block;
+      border-top: solid 100px red;
+      border-right: solid 100px blue;
+      border-bottom: solid 100px black;
+      border-left: solid 100px salmon;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      display: inline-block;
+      border-right: solid 100px transparent;
+      border-bottom: solid 100px black;
+      border-left: solid 100px transparent;
+    }
+
+    .trapezoid {
+      width: 100px;
+      height: 0;
+      display: inline-block;
+      border-right: solid 100px transparent;
+      border-bottom: solid 100px black;
+      border-left: solid 100px transparent;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="one">
+    <p>四个三角形</p>
+    <div class="triangle-4"></div>
+    <xmp>
+      //html
+      <div class="triangle-4"></div>
+    </xmp>
+    <pre>
+      //css
+      .triangle-4 {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border-top: solid 100px red;
+        border-right: solid 100px blue;
+        border-bottom: solid 100px black;
+        border-left: solid 100px salmon;
+      }
+    </pre>
+  </div>
+
+  <br>
+
+  <div class="one">
+    <p>三角形</p>
+    <div class="triangle"></div>
+    <xmp>
+      //html
+      <div class="triangle"></div>
+    </xmp>
+    <pre>
+      //css
+      .triangle {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border-right: solid 100px transparent;
+        border-bottom: solid 100px black;
+        border-left: solid 100px transparent;
+      }
+    </pre>
+  </div>
+
+  <br>
+
+  <div class="one">
+    <p>梯形</p>
+    <div class="trapezoid"></div>
+    <xmp>
+      //html
+      <div class="trapezoid"></div>
+    </xmp>
+    <pre>
+      //css
+      .trapezoid {
+        width: 100px;
+        height: 0;
+        display: inline-block;
+        border-right: solid 100px transparent;
+        border-bottom: solid 100px black;
+        border-left: solid 100px transparent;
+      }
+    </pre>
+  </div>
+
+</body>
+
+</html>
