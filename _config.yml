@@ -12,7 +12,9 @@ title:            心刀 の 博客
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  [Xindot.com]()
+  [Xindot.com](http://xindot.com){:target="_blank"}
+  /
+  [blog.6h5.cn](http://blog.6h5.cn){:target="_blank"}
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [js,react,vue,nodejs,git,css]
